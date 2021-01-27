@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -63,28 +63,15 @@ F 3 "" H 5350 4500 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	3750 4800 3600 4800
-$Comp
-L rx:EC2-5NU K4
-U 1 1 6012DEAD
-P 5400 5500
-F 0 "K4" H 4600 5887 60  0000 C CNN
-F 1 "EC2-5NU" H 4600 5781 60  0000 C CNN
-F 2 "rx:EC2-5NU" H 4600 5740 60  0001 C CNN
-F 3 "" H 5400 5500 60  0000 C CNN
-	1    5400 5500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3800 5800 3650 5800
 Wire Wire Line
 	3750 2700 3150 2700
 Wire Wire Line
-	3150 6200 2850 6200
-Wire Wire Line
 	3800 5700 3150 5700
 Connection ~ 3150 5700
 Wire Wire Line
-	3150 5700 3150 6200
+	3150 5700 3150 6050
 Wire Wire Line
 	3750 4700 3150 4700
 Wire Wire Line
@@ -105,7 +92,7 @@ Text HLabel 3600 4800 0    50   Output ~ 0
 OUT_3
 Text HLabel 3650 5800 0    50   Output ~ 0
 OUT_4
-Text HLabel 2850 6200 0    50   Output ~ 0
+Text HLabel 5800 6050 2    50   Output ~ 0
 COM
 Text GLabel 2800 2500 0    50   Input ~ 0
 Vdd
@@ -160,20 +147,12 @@ Wire Wire Line
 	6250 5500 5400 5500
 NoConn ~ 3750 2600
 NoConn ~ 5350 2600
-NoConn ~ 5350 2700
-NoConn ~ 5350 2800
 NoConn ~ 3750 3600
 NoConn ~ 5350 3600
-NoConn ~ 5350 3700
-NoConn ~ 5350 3800
 NoConn ~ 5350 4600
-NoConn ~ 5350 4700
-NoConn ~ 5350 4800
 NoConn ~ 3750 4600
 NoConn ~ 3800 5600
 NoConn ~ 5400 5600
-NoConn ~ 5400 5700
-NoConn ~ 5400 5800
 Text GLabel 9200 3650 2    50   Input ~ 0
 Vss
 Wire Wire Line
@@ -200,4 +179,63 @@ NoConn ~ 6650 3950
 NoConn ~ 8850 3750
 NoConn ~ 8850 3850
 NoConn ~ 8850 3950
+Text HLabel 2850 6050 0    50   Input ~ 0
+AC_LINE
+$Comp
+L rx:EC2-5NU K4
+U 1 1 6012DEAD
+P 5400 5500
+F 0 "K4" H 4600 5887 60  0000 C CNN
+F 1 "EC2-5NU" H 4600 5781 60  0000 C CNN
+F 2 "rx:EC2-5NU" H 4600 5740 60  0001 C CNN
+F 3 "" H 5400 5500 60  0000 C CNN
+	1    5400 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2800 5600 2800
+Wire Wire Line
+	5600 2800 5600 3800
+Wire Wire Line
+	5600 6050 5800 6050
+Wire Wire Line
+	5400 5800 5600 5800
+Connection ~ 5600 5800
+Wire Wire Line
+	5600 5800 5600 6050
+Wire Wire Line
+	5350 4800 5600 4800
+Connection ~ 5600 4800
+Wire Wire Line
+	5600 4800 5600 5800
+Wire Wire Line
+	5350 3800 5600 3800
+Connection ~ 5600 3800
+Wire Wire Line
+	5600 3800 5600 4800
+Wire Wire Line
+	2850 6050 3150 6050
+Text HLabel 5800 6200 2    50   Input ~ 0
+AC_NEUTRAL
+Wire Wire Line
+	5800 6200 5450 6200
+Wire Wire Line
+	5450 6200 5450 5700
+Wire Wire Line
+	5450 2700 5350 2700
+Wire Wire Line
+	5350 3700 5450 3700
+Connection ~ 5450 3700
+Wire Wire Line
+	5450 3700 5450 2700
+Wire Wire Line
+	5350 4700 5450 4700
+Connection ~ 5450 4700
+Wire Wire Line
+	5450 4700 5450 3700
+Wire Wire Line
+	5400 5700 5450 5700
+Connection ~ 5450 5700
+Wire Wire Line
+	5450 5700 5450 4700
 $EndSCHEMATC

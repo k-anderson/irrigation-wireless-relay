@@ -1,4 +1,4 @@
-19010282997180329
+19011893597728630
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83026,87 +83026,94 @@ varistor SIOV
 0
 2
 2
-rx
+tx
 1X08_LOCK
 PLATED THROUGH HOLE -8 PIN LOCKING FOOTPRINT
 PLATED THROUGH HOLE -8 PIN LOCKING FOOTPRINT
 0
 8
 8
-rx
+tx
 1825910-6
 
 
 0
 4
 4
-rx
+tx
 173010542
 
 
 0
 3
 3
-rx
+tx
+CP_Radial_D16.0mm_P7.50mm
+CP, Radial series, Radial, pin pitch=7.50mm, , diameter=16mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 7.50mm  diameter 16mm Electrolytic Capacitor
+0
+2
+2
+tx
 CUI_TB003-500-P08BE
 
 
 0
 8
 8
-rx
+tx
 DF04M
 
 
 0
 4
 4
-rx
-EC2-5NU
+tx
+D_DO-41_SOD81_P10.16mm_Horizontal
+Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/DO-41%20(Plastic).pdf
+Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm
+0
+2
+2
+tx
+H11L1M
 
 
 0
-8
-8
-rx
+6
+6
+tx
 LED_D5.0mm
 LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf
 LED diameter 5.0mm 2 pins
 0
 2
 2
-rx
+tx
 PIC16F627A-I&slash_P
 
 
 0
 18
 18
-rx
-RF-LINK_RX
-RF LINK RECEIVER, PTH PACKAGE
-RF LINK RECEIVER, PTH PACKAGE
-0
-8
-4
-rx
+tx
 RF2-03E-T-00-50-G
 
 
 0
 5
 5
-rx
+tx
 R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal
 Resistor, Axial_DIN0411 series, Axial, Horizontal, pin pitch=15.24mm, 1W, length*diameter=9.9*3.6mm^2
 Resistor Axial_DIN0411 series Axial Horizontal pin pitch 15.24mm 1W length 9.9mm diameter 3.6mm
 0
 2
 2
-rx
-ULN2003AN
-
-
+tx
+WRL-10534
+RF LINK TRANSMITTER, PTH PACKAGE
+RF LINK TRANSMITTER, PTH PACKAGE
 0
-16
-16
+4
+4
