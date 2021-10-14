@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CP
+D Polarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP D
+D Diode
+K diode
+F ~
+$ENDCMP
+#
+$CMP DF04M
+D BRIDGE RECT 1P 400V 1.5A 4DIP
+K DF04M-ND
+F https://www.onsemi.com/pub/Collateral/DF10M-D.pdf
+$ENDCMP
+#
+$CMP LED
+D Light emitting diode
+K LED diode
+F ~
+$ENDCMP
+#
+$CMP R
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
+#End Doc Library

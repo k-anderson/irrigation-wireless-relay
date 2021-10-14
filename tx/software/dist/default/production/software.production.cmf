@@ -32,7 +32,7 @@ bssBANK0 BANK0 1 34 34 5 1
 idataBANK0 CODE 0 372 372 6 2
 dataBANK0 BANK0 1 2E 2E 6 1
 config CONFIG 4 2007 2007 1 2
-$C:\Users\KANDER~1\AppData\Local\Temp\sbe0.o
+$C:\Users\KANDER~1\AppData\Local\Temp\s60k.o
 reset_vec CODE 0 0 0 1 2
 end_init CODE 0 C C 1 2
 config CONFIG 4 2007 2007 1 2
@@ -79,28 +79,28 @@ STRING 378-3FF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\software.production.o
-D cinit CODE >331:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-D cinit CODE >334:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-D cinit CODE >377:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-E cinit CODE >378:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-F cinit CODE >379:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-10 cinit CODE >380:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-11 cinit CODE >381:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-12 cinit CODE >382:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-13 cinit CODE >383:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-14 cinit CODE >384:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-15 cinit CODE >385:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-16 cinit CODE >386:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-17 cinit CODE >387:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-18 cinit CODE >388:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-19 cinit CODE >392:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-1A cinit CODE >393:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-1B cinit CODE >394:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-1C cinit CODE >395:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-1D cinit CODE >396:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-1E cinit CODE >402:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-1E cinit CODE >404:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
-1F cinit CODE >405:C:\Users\KANDER~1\AppData\Local\Temp\sbe0.s
+D cinit CODE >331:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+D cinit CODE >334:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+D cinit CODE >377:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+E cinit CODE >378:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+F cinit CODE >379:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+10 cinit CODE >380:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+11 cinit CODE >381:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+12 cinit CODE >382:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+13 cinit CODE >383:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+14 cinit CODE >384:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+15 cinit CODE >385:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+16 cinit CODE >386:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+17 cinit CODE >387:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+18 cinit CODE >388:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+19 cinit CODE >392:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+1A cinit CODE >393:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+1B cinit CODE >394:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+1C cinit CODE >395:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+1D cinit CODE >396:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+1E cinit CODE >402:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+1E cinit CODE >404:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
+1F cinit CODE >405:C:\Users\KANDER~1\AppData\Local\Temp\s60k.s
 4 intentry CODE >175:C:\Users\kanderson\Documents\irrigation_relay\tx\software\main_tx.c
 33A text10 CODE >73:C:\Users\kanderson\Documents\irrigation_relay\tx\software\main_tx.c
 33A text10 CODE >74:C:\Users\kanderson\Documents\irrigation_relay\tx\software\main_tx.c
@@ -326,10 +326,10 @@ __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 _T1CONbits 10 0 ABS 0 - dist/default/production\software.production.o
 __Hstrings 0 0 ABS 0 strings -
 _display_address 33 0 BANK0 1 dataBANK0 dist/default/production\software.production.o
-___sp 0 0 STACK 2 stack C:\Users\KANDER~1\AppData\Local\Temp\sbe0.o
+___sp 0 0 STACK 2 stack C:\Users\KANDER~1\AppData\Local\Temp\s60k.o
 _main 1CA 0 CODE 0 maintext dist/default/production\software.production.o
 btemp 7E 0 ABS 0 - dist/default/production\software.production.o
-start 18 0 CODE 0 init C:\Users\KANDER~1\AppData\Local\Temp\sbe0.o
+start 18 0 CODE 0 init C:\Users\KANDER~1\AppData\Local\Temp\s60k.o
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\software.production.o
 _interrupt_handler 5C8 0 CODE 0 text7 dist/default/production\software.production.o
 __size_of___ctoee 0 0 ABS 0 - dist/default/production\software.production.o
@@ -341,12 +341,12 @@ __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __Hpowerup 0 0 CODE 0 powerup -
 __size_of_initialize_hw 0 0 ABS 0 - dist/default/production\software.production.o
 ___memcpyee 494 0 CODE 0 text6 dist/default/production\software.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\KANDER~1\AppData\Local\Temp\sbe0.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\KANDER~1\AppData\Local\Temp\sbe0.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\KANDER~1\AppData\Local\Temp\sbe0.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\KANDER~1\AppData\Local\Temp\sbe0.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\KANDER~1\AppData\Local\Temp\sbe0.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\KANDER~1\AppData\Local\Temp\sbe0.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\KANDER~1\AppData\Local\Temp\s60k.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\KANDER~1\AppData\Local\Temp\s60k.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\KANDER~1\AppData\Local\Temp\s60k.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\KANDER~1\AppData\Local\Temp\s60k.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\KANDER~1\AppData\Local\Temp\s60k.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\KANDER~1\AppData\Local\Temp\s60k.o
 __HdataEEDATA 0 0 ABS 0 dataEEDATA -
 wtemp0 7E 0 ABS 0 - dist/default/production\software.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
@@ -375,13 +375,13 @@ _send_data 2E4 0 CODE 0 text1 dist/default/production\software.production.o
 _address 0 4200 EEDATA 3 idataEEDATA dist/default/production\software.production.o
 send_data@i 25 0 BANK0 1 cstackBANK0 dist/default/production\software.production.o
 _blink_patterns 2E 0 BANK0 1 dataBANK0 dist/default/production\software.production.o
-___stackhi 0 0 ABS 0 - C:\Users\KANDER~1\AppData\Local\Temp\sbe0.o
-___stacklo 0 0 ABS 0 - C:\Users\KANDER~1\AppData\Local\Temp\sbe0.o
+___stackhi 0 0 ABS 0 - C:\Users\KANDER~1\AppData\Local\Temp\s60k.o
+___stacklo 0 0 ABS 0 - C:\Users\KANDER~1\AppData\Local\Temp\s60k.o
 _pairing_mode 36 0 BANK0 1 bssBANK0 dist/default/production\software.production.o
 __LidataEEDATA 0 0 ABS 0 idataEEDATA -
 start_initialization 1A 0 CODE 0 cinit dist/default/production\software.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\software.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\KANDER~1\AppData\Local\Temp\sbe0.o
+___int_sp 0 0 STACK 2 stack C:\Users\KANDER~1\AppData\Local\Temp\s60k.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -430,7 +430,7 @@ __end_of_handle_port_b_change 6AE 0 CODE 0 text10 dist/default/production\softwa
 __HidataEEDATA 0 0 ABS 0 idataEEDATA -
 ___memcpyee@ptr 23 0 BANK0 1 cstackBANK0 dist/default/production\software.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\KANDER~1\AppData\Local\Temp\sbe0.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\KANDER~1\AppData\Local\Temp\s60k.o
 __size_of___memcpyee 0 0 ABS 0 - dist/default/production\software.production.o
 __pdataBANK0 2E 0 BANK0 1 dataBANK0 dist/default/production\software.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -

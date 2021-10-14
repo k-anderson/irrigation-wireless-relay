@@ -1,0 +1,41 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# DF04M
+#
+DEF DF04M D 0 30 Y Y 1 F N
+F0 "D" -300 250 60 H V L CNN
+F1 "DF04M" 50 -300 60 H V L CNN
+F2 "digikey-footprints:DIP-4_W7.62mm" 200 200 60 H I L CNN
+F3 "https://www.onsemi.com/pub/Collateral/DF10M-D.pdf" 200 300 60 H I L CNN
+F4 "DF04M-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "DF04M" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Diodes - Bridge Rectifiers" 200 700 60 H I L CNN "Family"
+F8 "https://www.onsemi.com/pub/Collateral/DF10M-D.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/on-semiconductor/DF04M/DF04M-ND/965265" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "BRIDGE RECT 1P 400V 1.5A 4DIP" 200 1000 60 H I L CNN "Description"
+F11 "ON Semiconductor" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 2 0 1 0 -150 200 -50 100 N
+P 2 0 1 0 -50 -100 -150 -200 N
+P 2 0 1 0 100 -50 200 -150 N
+P 2 0 1 0 200 150 100 50 N
+P 3 0 1 0 -150 100 -250 0 -150 -100 N
+P 3 0 1 0 -100 150 0 250 100 150 N
+P 3 0 1 0 100 -150 0 -250 -100 -150 N
+P 3 0 1 0 150 100 250 0 150 -100 N
+P 4 0 1 0 -100 50 -100 150 -200 150 -100 50 F
+P 4 0 1 0 50 -100 150 -100 150 -200 50 -100 F
+P 4 0 1 0 50 100 150 100 150 200 50 100 F
+P 5 0 1 0 -100 -150 -100 -50 -150 -100 -200 -150 -100 -150 F
+P 5 0 1 0 0 250 250 0 0 -250 -250 0 0 250 f
+X + 1 400 0 150 L 50 50 1 1 w
+X - 2 -400 0 150 R 50 50 1 1 w
+X AC 3 0 400 150 D 50 50 1 1 W
+X AC 4 0 -400 150 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library

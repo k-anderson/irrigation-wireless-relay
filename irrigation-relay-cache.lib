@@ -1,0 +1,381 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# MCU_Microchip_PIC16_PIC16F627A-IP
+#
+DEF MCU_Microchip_PIC16_PIC16F627A-IP U 0 40 Y Y 1 F N
+F0 "U" -950 700 50 H V L CNN
+F1 "MCU_Microchip_PIC16_PIC16F627A-IP" -950 600 50 H V L CNN
+F2 "" 0 0 50 H I C CIN
+F3 "" 0 0 50 H I C CNN
+ALIAS PIC16F628A-IP PIC16F648A-IP
+$FPLIST
+ DIP*
+ PDIP*
+$ENDFPLIST
+DRAW
+S 950 550 -950 -550 0 1 10 f
+X Vref/AN2/RA2 1 1100 200 150 L 50 50 1 1 B
+X RB4/PGM 10 -1100 0 150 R 50 50 1 1 B
+X RB5 11 -1100 -100 150 R 50 50 1 1 B
+X RB6/T1OSC0/T1CKI/PGC 12 -1100 -200 150 R 50 50 1 1 B
+X RB7/T1OSI/PGD 13 -1100 -300 150 R 50 50 1 1 B
+X VDD 14 0 700 150 D 50 50 1 1 W
+X CLKOUT/OSC2/RA6 15 1100 -200 150 L 50 50 1 1 B
+X CLKIN/OSC1/RA7 16 1100 -300 150 L 50 50 1 1 B
+X AN0/RA0 17 1100 400 150 L 50 50 1 1 B
+X AN1/RA1 18 1100 300 150 L 50 50 1 1 B
+X CMP1/AN3/RA3 2 1100 100 150 L 50 50 1 1 B
+X TOCKI/CMP2/RA4 3 1100 0 150 L 50 50 1 1 B
+X ~MCLR~/Vpp/RA5 4 1100 -100 150 L 50 50 1 1 I
+X VSS 5 0 -700 150 U 50 50 1 1 W
+X RB0/INT 6 -1100 400 150 R 50 50 1 1 B
+X RB1/RX/DT 7 -1100 300 150 R 50 50 1 1 B
+X RB2/TX/CK 8 -1100 200 150 R 50 50 1 1 B
+X RB3/CCP1 9 -1100 100 150 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# SparkFun-Capacitors_10UF-POLAR-RADIAL-2.5MM-25V-20%
+#
+DEF SparkFun-Capacitors_10UF-POLAR-RADIAL-2.5MM-25V-20% C 0 40 N N 1 L N
+F0 "C" 40 25 45 H V L BNN
+F1 "SparkFun-Capacitors_10UF-POLAR-RADIAL-2.5MM-25V-20%" 40 -165 45 H V L BNN
+F2 "CPOL-RADIAL-2.5MM-5MM" 0 250 20 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "CAP-08440" 0 300 60 H V C CNN
+$FPLIST
+ *CPOL-RADIAL-2.5MM-5MM*
+ *CPOL-RADIAL-2.5MM-5MM-KIT*
+$ENDFPLIST
+DRAW
+A 0 -199 159 901 1273 1 1 0 N 0 -40 -97 -72
+A 0 -198 159 523 899 1 1 0 N 98 -73 0 -39
+S -88 26 -53 31 1 1 0 F
+S -73 11 -68 46 1 1 0 F
+P 2 1 0 0 -100 0 100 0 N
+P 2 1 0 0 0 -40 0 -100 N
+X + 1 0 100 100 D 40 40 1 1 P
+X - 2 0 -200 100 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SparkFun-Connectors_CONN_06LOCK
+#
+DEF SparkFun-Connectors_CONN_06LOCK J 0 40 N Y 1 L N
+F0 "J" -200 600 45 H V L BNN
+F1 "SparkFun-Connectors_CONN_06LOCK" -200 -150 45 H V L BNN
+F2 "1X06_LOCK" 0 700 20 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "XXX-00000" 0 750 60 H V C CNN
+$FPLIST
+ *1X06_LOCK*
+$ENDFPLIST
+DRAW
+S 0 -50 -200 550 0 1 0 f
+X 1 1 100 0 100 L 40 40 1 1 P
+X 2 2 100 100 100 L 40 40 1 1 P
+X 3 3 100 200 100 L 40 40 1 1 P
+X 4 4 100 300 100 L 40 40 1 1 P
+X 5 5 100 400 100 L 40 40 1 1 P
+X 6 6 100 500 100 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SparkFun-RF_RF-LINK_TX
+#
+DEF SparkFun-RF_RF-LINK_TX M 0 40 Y Y 1 L N
+F0 "M" -200 350 45 H V L BNN
+F1 "SparkFun-RF_RF-LINK_TX" -200 -300 45 H V L BNN
+F2 "RF-LINK_TX" 0 450 20 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "WRL-10534" 0 500 60 H V C CNN
+$FPLIST
+ *RF-LINK_TX*
+$ENDFPLIST
+DRAW
+S -200 300 150 -200 1 0 0 f
+X ANT ANT -300 100 100 R 40 40 1 1 P
+X DATA DATA -300 0 100 R 40 40 1 1 I
+X GND GND -300 -100 100 R 40 40 1 1 W
+X +5V VCC -300 200 100 R 40 40 1 1 W
+ENDDRAW
+ENDDEF
+#
+# SparkFun-Resistors_RESISTORAXIAL-0.3
+#
+DEF SparkFun-Resistors_RESISTORAXIAL-0.3 R 0 40 N N 1 L N
+F0 "R" -200 50 45 H V L BNN
+F1 "SparkFun-Resistors_RESISTORAXIAL-0.3" -200 -150 45 H V L BNN
+F2 "AXIAL-0.3" 0 150 20 H I C CNN
+F3 "" 0 0 60 H I C CNN
+F4 " " 0 200 60 H V C CNN
+$FPLIST
+ *AXIAL-0.3*
+$ENDFPLIST
+DRAW
+P 2 1 0 0 -100 0 -85 40 N
+P 2 1 0 0 -85 40 -60 -40 N
+P 2 1 0 0 -60 -40 -35 40 N
+P 2 1 0 0 -35 40 -10 -40 N
+P 2 1 0 0 -10 -40 15 40 N
+P 2 1 0 0 15 40 40 -40 N
+P 2 1 0 0 40 -40 65 40 N
+P 2 1 0 0 65 40 90 -40 N
+P 2 1 0 0 90 -40 100 0 N
+X 1 P$1 -200 0 100 R 40 40 1 1 P
+X 2 P$2 200 0 100 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Coaxial-Connectors-RF_5-1814400-1
+#
+DEF dk_Coaxial-Connectors-RF_5-1814400-1 J 0 40 Y Y 1 F N
+F0 "J" -50 50 50 H V R CNN
+F1 "dk_Coaxial-Connectors-RF_5-1814400-1" 50 -100 50 H V L CNN
+F2 "digikey-footprints:RF_SMA_RightAngle_5-1814400-1" 200 200 60 H I L CNN
+F3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814400&DocType=Customer+Drawing&DocLang=English" 200 300 60 H I L CNN
+F4 "A97593-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "5-1814400-1" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Coaxial Connectors (RF)" 200 700 60 H I L CNN "Family"
+F8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1814400&DocType=Customer+Drawing&DocLang=English" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/te-connectivity-amp-connectors/5-1814400-1/A97593-ND/1755981" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN SMA JACK R/A 50 OHM PCB" 200 1000 60 H I L CNN "Description"
+F11 "TE Connectivity AMP Connectors" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+A 2 -1 52 1789 -266 1 1 0 N -50 0 50 -25
+A 3 1 53 271 -1789 1 1 0 N 50 25 -50 0
+C 0 0 25 1 1 0 N
+X ~ 1 0 -200 145 U 50 50 1 1 P
+X ~ 2 200 0 175 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_DC-DC-Converters_R-78E5_0-0_5
+#
+DEF dk_DC-DC-Converters_R-78E5_0-0_5 U 0 40 Y Y 1 F N
+F0 "U" -200 250 50 H V L CNN
+F1 "dk_DC-DC-Converters_R-78E5_0-0_5" 50 -250 50 H V L CNN
+F2 "digikey-footprints:SIP-3_P2.54mm" 200 200 60 H I L CNN
+F3 "https://www.recom-power.com/pdf/Innoline/R-78Exx-0.5.pdf" 200 300 60 H I L CNN
+F4 "945-1648-5-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "R-78E5.0-0.5" 200 500 60 H I L CNN "MPN"
+F6 "Power Supplies - Board Mount" 200 600 60 H I L CNN "Category"
+F7 "DC DC Converters" 200 700 60 H I L CNN "Family"
+F8 "https://www.recom-power.com/pdf/Innoline/R-78Exx-0.5.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/recom-power/R-78E5.0-0.5/945-1648-5-ND/2834904" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "DC DC CONVERTER 5V 3W" 200 1000 60 H I L CNN "Description"
+F11 "Recom Power" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S 200 200 -200 -200 1 1 0 f
+X VDD 1 -300 100 100 R 50 50 1 1 W
+X GND 2 0 -300 100 U 50 50 1 1 W
+X OUT 3 300 100 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# dk_Diodes-Bridge-Rectifiers_DF04M
+#
+DEF dk_Diodes-Bridge-Rectifiers_DF04M D 0 30 Y Y 1 F N
+F0 "D" -300 250 60 H V L CNN
+F1 "dk_Diodes-Bridge-Rectifiers_DF04M" 50 -300 60 H V L CNN
+F2 "digikey-footprints:DIP-4_W7.62mm" 200 200 60 H I L CNN
+F3 "https://www.onsemi.com/pub/Collateral/DF10M-D.pdf" 200 300 60 H I L CNN
+F4 "DF04M-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "DF04M" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Diodes - Bridge Rectifiers" 200 700 60 H I L CNN "Family"
+F8 "https://www.onsemi.com/pub/Collateral/DF10M-D.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/on-semiconductor/DF04M/DF04M-ND/965265" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "BRIDGE RECT 1P 400V 1.5A 4DIP" 200 1000 60 H I L CNN "Description"
+F11 "ON Semiconductor" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 2 0 1 0 -150 200 -50 100 N
+P 2 0 1 0 -50 -100 -150 -200 N
+P 2 0 1 0 100 -50 200 -150 N
+P 2 0 1 0 200 150 100 50 N
+P 3 0 1 0 -150 100 -250 0 -150 -100 N
+P 3 0 1 0 -100 150 0 250 100 150 N
+P 3 0 1 0 100 -150 0 -250 -100 -150 N
+P 3 0 1 0 150 100 250 0 150 -100 N
+P 4 0 1 0 -100 50 -100 150 -200 150 -100 50 F
+P 4 0 1 0 50 -100 150 -100 150 -200 50 -100 F
+P 4 0 1 0 50 100 150 100 150 200 50 100 F
+P 5 0 1 0 -100 -150 -100 -50 -150 -100 -200 -150 -100 -150 F
+P 5 0 1 0 0 250 250 0 0 -250 -250 0 0 250 f
+X + 1 400 0 150 L 50 50 1 1 w
+X - 2 -400 0 150 R 50 50 1 1 w
+X AC 3 0 400 150 D 50 50 1 1 W
+X AC 4 0 -400 150 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# dk_Diodes-Rectifiers-Single_1N4148TA
+#
+DEF dk_Diodes-Rectifiers-Single_1N4148TA D 0 0 N N 1 F N
+F0 "D" 0 100 60 H V C CNN
+F1 "dk_Diodes-Rectifiers-Single_1N4148TA" 0 -100 60 H V C CNN
+F2 "digikey-footprints:DO-35" 200 200 60 H I L CNN
+F3 "https://www.onsemi.com/pub/Collateral/1N914-D.PDF" 200 300 60 H I L CNN
+F4 "1N4148TACT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "1N4148TA" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Diodes - Rectifiers - Single" 200 700 60 H I L CNN "Family"
+F8 "https://www.onsemi.com/pub/Collateral/1N914-D.PDF" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/on-semiconductor/1N4148TA/1N4148TACT-ND/1532747" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "DIODE GEN PURP 100V 200MA DO35" 200 1000 60 H I L CNN "Description"
+F11 "ON Semiconductor" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 2 0 1 0 50 50 50 -50 N
+P 4 0 1 0 -50 50 -50 -50 50 0 -50 50 F
+X ~ A -200 0 150 R 50 50 1 1 P
+X ~ K 200 0 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Diodes-Zener-Single_1N5231BTR
+#
+DEF dk_Diodes-Zener-Single_1N5231BTR Z 0 0 N N 1 F N
+F0 "Z" 0 100 60 H V C BNN
+F1 "dk_Diodes-Zener-Single_1N5231BTR" 0 -100 60 H V C CNN
+F2 "digikey-footprints:DO-35" 200 200 60 H I L CNN
+F3 "https://www.onsemi.com/pub/Collateral/1N5221B-D.PDF" 200 300 60 H I L CNN
+F4 "1N5231BFSCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "1N5231BTR" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Diodes - Zener - Single" 200 700 60 H I L CNN "Family"
+F8 "https://www.onsemi.com/pub/Collateral/1N5221B-D.PDF" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/on-semiconductor/1N5231BTR/1N5231BFSCT-ND/1532765" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "DIODE ZENER 5.1V 500MW DO35" 200 1000 60 H I L CNN "Description"
+F11 "ON Semiconductor" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 2 0 1 0 50 -50 25 -50 N
+P 2 0 1 0 50 50 50 -50 N
+P 2 0 1 0 50 50 75 50 N
+P 4 0 1 0 -50 50 -50 -50 50 0 -50 50 F
+X ~ A -200 0 150 R 50 50 1 1 P
+X ~ K 200 0 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_LED-Indication-Discrete_151033RS03000
+#
+DEF dk_LED-Indication-Discrete_151033RS03000 D 0 0 Y Y 1 F N
+F0 "D" -150 150 60 H V C CNN
+F1 "dk_LED-Indication-Discrete_151033RS03000" 0 -150 60 H V C CNN
+F2 "digikey-footprints:LED_3mm_Radial" 200 200 60 H I L CNN
+F3 "https://katalog.we-online.de/led/datasheet/151033RS03000.pdf" 200 300 60 H I L CNN
+F4 "732-5013-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "151033RS03000" 200 500 60 H I L CNN "MPN"
+F6 "Optoelectronics" 200 600 60 H I L CNN "Category"
+F7 "LED Indication - Discrete" 200 700 60 H I L CNN "Family"
+F8 "https://katalog.we-online.de/led/datasheet/151033RS03000.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/wurth-electronics-inc/151033RS03000/732-5013-ND/4490003" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "LED RED CLEAR 3MM ROUND T/H" 200 1000 60 H I L CNN "Description"
+F11 "Wurth Electronics Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 2 0 1 0 -25 150 -75 100 N
+P 2 0 1 0 0 50 0 -50 N
+P 2 0 1 0 25 125 -25 75 N
+P 3 0 1 0 -50 150 -25 150 -25 125 N
+P 3 0 1 0 0 125 25 125 25 100 N
+P 4 0 1 0 -100 50 -100 -50 0 0 -100 50 F
+X ~ 1 -200 0 100 R 50 50 1 1 P
+X ~ 2 100 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Tactile-Switches_1825910-6
+#
+DEF dk_Tactile-Switches_1825910-6 S 0 40 Y Y 1 F N
+F0 "S" 0 180 60 H V C CNN
+F1 "dk_Tactile-Switches_1825910-6" 5 -200 60 H V C CNN
+F2 "digikey-footprints:Switch_Tactile_THT_6x6mm" 200 200 60 H I L CNN
+F3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" 200 300 60 H I L CNN
+F4 "450-1650-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "1825910-6" 200 500 60 H I L CNN "MPN"
+F6 "Switches" 200 600 60 H I L CNN "Category"
+F7 "Tactile Switches" 200 700 60 H I L CNN "Family"
+F8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/te-connectivity-alcoswitch-switches/1825910-6/450-1650-ND/1632536" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "SWITCH TACTILE SPST-NO 0.05A 24V" 200 1000 60 H I L CNN "Description"
+F11 "TE Connectivity ALCOSWITCH Switches" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C -60 0 10 0 1 0 N
+C 60 0 10 0 1 0 N
+P 2 0 1 0 -100 100 -100 -100 N
+P 2 0 1 0 -70 0 -100 0 N
+P 2 0 1 0 -70 50 70 50 N
+P 2 0 1 0 100 -100 100 100 N
+P 2 0 1 0 100 0 70 0 N
+P 2 1 1 0 -40 110 35 110 N
+P 2 1 1 0 0 110 0 50 N
+X ~ 1 -200 100 100 R 50 50 1 1 P
+X ~ 2 -200 -100 100 R 50 50 1 1 P
+X ~ 3 200 100 100 L 50 50 1 1 P
+X ~ 4 200 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Terminal-Blocks-Wire-to-Board_OSTTC082162
+#
+DEF dk_Terminal-Blocks-Wire-to-Board_OSTTC082162 J 0 40 Y Y 1 F N
+F0 "J" -100 -50 50 H V R CNN
+F1 "dk_Terminal-Blocks-Wire-to-Board_OSTTC082162" 350 -200 50 H V C CNN
+F2 "digikey-footprints:Term_Block_1x8_P5.08mm" 200 200 60 H I L CNN
+F3 "http://www.on-shore.com/wp-content/uploads/OSTTCXX2162.pdf" 200 300 60 H I L CNN
+F4 "ED2615-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "OSTTC082162" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Terminal Blocks - Wire to Board" 200 700 60 H I L CNN "Family"
+F8 "http://www.on-shore.com/wp-content/uploads/OSTTCXX2162.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/on-shore-technology-inc/OSTTC082162/ED2615-ND/614564" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TERM BLK 8P SIDE ENT 5.08MM PCB" 200 1000 60 H I L CNN "Description"
+F11 "On Shore Technology Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 0 -100 25 1 1 0 N
+C 100 -100 25 1 1 0 N
+C 200 -100 25 1 1 0 N
+C 300 -100 25 1 1 0 N
+C 400 -100 25 1 1 0 N
+C 500 -100 25 1 1 0 N
+C 600 -100 25 1 1 0 N
+C 700 -100 25 1 1 0 N
+S -50 0 750 -150 1 1 0 f
+P 2 1 1 0 0 -75 0 -125 N
+P 2 1 1 0 25 -100 -25 -100 N
+P 2 1 1 0 75 -100 125 -100 N
+P 2 1 1 0 100 -75 100 -125 N
+P 2 1 1 0 200 -75 200 -125 N
+P 2 1 1 0 225 -100 175 -100 N
+P 2 1 1 0 275 -100 325 -100 N
+P 2 1 1 0 300 -75 300 -125 N
+P 2 1 1 0 400 -75 400 -125 N
+P 2 1 1 0 425 -100 375 -100 N
+P 2 1 1 0 475 -100 525 -100 N
+P 2 1 1 0 500 -75 500 -125 N
+P 2 1 1 0 600 -75 600 -125 N
+P 2 1 1 0 625 -100 575 -100 N
+P 2 1 1 0 675 -100 725 -100 N
+P 2 1 1 0 700 -75 700 -125 N
+X ~ 1 0 100 100 D 50 50 1 1 P
+X ~ 2 100 100 100 D 50 50 1 1 P
+X ~ 3 200 100 100 D 50 50 1 1 P
+X ~ 4 300 100 100 D 50 50 1 1 P
+X ~ 5 400 100 100 D 50 50 1 1 P
+X ~ 6 500 100 100 D 50 50 1 1 P
+X ~ 7 600 100 100 D 50 50 1 1 P
+X ~ 8 700 100 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
-                                                                                               Mon Jan 25 11:15:15 2021
+                                                                                               Mon Feb 08 14:49:03 2021
 
 Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1 
      1                           	processor	16F627A
@@ -455,8 +455,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    441  00ED  00B3               	movwf	_display_address
    442  00EE                     l1258:
    443                           
-   444                           ;main_tx.c: 227:         PORTBbits.RB2 = 0;
-   445  00EE  1106               	bcf	6,2	;volatile
+   444                           ;main_tx.c: 227:         PORTBbits.RB1 = 0;
+   445  00EE  1086               	bcf	6,1	;volatile
    446  00EF                     l1260:
    447                           
    448                           ;main_tx.c: 229:         if (state == PAIRING) {
@@ -733,10 +733,10 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    718  0176  01A6               	clrf	send_data@i+1
    719  0177                     l91:
    720                           
-   721                           ;main_tx.c: 200:         PORTBbits.RB2 = 1;
+   721                           ;main_tx.c: 200:         PORTBbits.RB1 = 1;
    722  0177  1283               	bcf	3,5	;RP0=0, select bank0
    723  0178  1303               	bcf	3,6	;RP1=0, select bank0
-   724  0179  1506               	bsf	6,2	;volatile
+   724  0179  1486               	bsf	6,1	;volatile
    725  017A                     l1210:
    726                           
    727                           ;main_tx.c: 201:         _delay((unsigned long)((1)*(4000000/4000.0)));
@@ -752,10 +752,10 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    737  0182  0000               	nop
    738  0183                     l1212:
    739                           
-   740                           ;main_tx.c: 202:         PORTBbits.RB2 = 0;
+   740                           ;main_tx.c: 202:         PORTBbits.RB1 = 0;
    741  0183  1283               	bcf	3,5	;RP0=0, select bank0
    742  0184  1303               	bcf	3,6	;RP1=0, select bank0
-   743  0185  1106               	bcf	6,2	;volatile
+   743  0185  1086               	bcf	6,1	;volatile
    744                           
    745                           ;main_tx.c: 203:         _delay((unsigned long)((1)*(4000000/4000.0)));
    746  0186  30C7               	movlw	199
@@ -805,10 +805,10 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    790  01A8  29C9               	goto	l93
    791  01A9                     l94:
    792                           
-   793                           ;main_tx.c: 208:         PORTBbits.RB2 = 1;
+   793                           ;main_tx.c: 208:         PORTBbits.RB1 = 1;
    794  01A9  1283               	bcf	3,5	;RP0=0, select bank0
    795  01AA  1303               	bcf	3,6	;RP1=0, select bank0
-   796  01AB  1506               	bsf	6,2	;volatile
+   796  01AB  1486               	bsf	6,1	;volatile
    797  01AC                     l1218:
    798                           
    799                           ;main_tx.c: 209:         _delay((unsigned long)((1)*(4000000/4000.0)));
@@ -824,10 +824,10 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    809  01B4  0000               	nop
    810  01B5                     l1220:
    811                           
-   812                           ;main_tx.c: 210:         PORTBbits.RB2 = 0;
+   812                           ;main_tx.c: 210:         PORTBbits.RB1 = 0;
    813  01B5  1283               	bcf	3,5	;RP0=0, select bank0
    814  01B6  1303               	bcf	3,6	;RP1=0, select bank0
-   815  01B7  1106               	bcf	6,2	;volatile
+   815  01B7  1086               	bcf	6,1	;volatile
    816                           
    817                           ;main_tx.c: 211:         _delay((unsigned long)((1)*(4000000/4000.0)));
    818  01B8  30C7               	movlw	199
@@ -867,10 +867,10 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    852  01D4                     u1020:
    853  01D4                     l95:
    854                           
-   855                           ;main_tx.c: 215:     PORTBbits.RB2 = 0;
+   855                           ;main_tx.c: 215:     PORTBbits.RB1 = 0;
    856  01D4  1283               	bcf	3,5	;RP0=0, select bank0
    857  01D5  1303               	bcf	3,6	;RP1=0, select bank0
-   858  01D6  1106               	bcf	6,2	;volatile
+   858  01D6  1086               	bcf	6,1	;volatile
    859  01D7                     l1222:
    860                           
    861                           ;main_tx.c: 216:     _delay((unsigned long)((10)*(4000000/4000.0)));
@@ -2580,7 +2580,7 @@ EEDATA              80      0       1       0        0.8%
 
 
 Microchip Technology PIC Macro Assembler V2.31 build 20201012212115 
-Symbol Table                                                                                   Mon Jan 25 11:15:15 2021
+Symbol Table                                                                                   Mon Feb 08 14:49:03 2021
 
                               l41 0339                                l91 0177                                l93 01C9  
                               l94 01A9                                l95 01D4                                l96 01E2  

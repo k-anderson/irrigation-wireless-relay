@@ -197,22 +197,22 @@ void __interrupt() interrupt_handler(void) {
 void send_data(unsigned char data) {
     // send 3 framing transitions
     for (int i = 0; i < 3; i++) {
-        PORTBbits.RB2 = 1;
+        PORTBbits.RB1 = 1;
         __delay_ms(1);
-        PORTBbits.RB2 = 0;
+        PORTBbits.RB1 = 0;
         __delay_ms(1);
     }
 
     // send the data
     for (int i = 0; i <= data; i++) {
-        PORTBbits.RB2 = 1;
+        PORTBbits.RB1 = 1;
         __delay_ms(1);
-        PORTBbits.RB2 = 0;
+        PORTBbits.RB1 = 0;
         __delay_ms(1);
     }
 
     // send nothing for 10ms to mark the end
-    PORTBbits.RB2 = 0;
+    PORTBbits.RB1 = 0;
     __delay_ms(10);
 }
 
@@ -224,7 +224,7 @@ void main(void) {
     display_address = address - 9;
 
     while (1) {
-        PORTBbits.RB2 = 0;
+        PORTBbits.RB1 = 0;
 
         if (state == PAIRING) {
             // TODO: figure out a way to maybe make the button more responsive

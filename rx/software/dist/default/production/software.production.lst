@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
-                                                                                               Mon Jan 25 11:15:06 2021
+                                                                                               Mon Feb 08 14:51:01 2021
 
 Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1 
      1                           	processor	16F627A
@@ -705,17 +705,17 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    690                           ; Regs used in _packet_rx: [wreg+status,2+status,0]
    691                           
    692                           
-   693                           ;main_rx.c: 310:     if (PORTBbits.RB1) {
+   693                           ;main_rx.c: 310:     if (PORTBbits.RB2) {
    694  02DF  1283               	bcf	3,5	;RP0=0, select bank0
    695  02E0  1303               	bcf	3,6	;RP1=0, select bank0
-   696  02E1  1C86               	btfss	6,1	;volatile
+   696  02E1  1D06               	btfss	6,2	;volatile
    697  02E2  2AE4               	goto	u1121
    698  02E3  2AE5               	goto	u1120
    699  02E4                     u1121:
    700  02E4  2AF0               	goto	l118
    701  02E5                     u1120:
    702  02E5                     l115:
-   703  02E5  1886               	btfsc	6,1	;volatile
+   703  02E5  1906               	btfsc	6,2	;volatile
    704  02E6  2AE8               	goto	u1131
    705  02E7  2AE9               	goto	u1130
    706  02E8                     u1131:
@@ -2647,7 +2647,7 @@ EEDATA              80      0       1       0        0.8%
 
 
 Microchip Technology PIC Macro Assembler V2.31 build 20201012212115 
-Symbol Table                                                                                   Mon Jan 25 11:15:06 2021
+Symbol Table                                                                                   Mon Feb 08 14:51:01 2021
 
                                    l45 02BB                           ___awdiv@sign 0076  
                                   l110 0249                                    l111 0266  

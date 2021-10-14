@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -19,7 +19,7 @@ Text HLabel 8050 4450 2    50   Output ~ 0
 ZONE_2
 Text HLabel 9150 4250 2    50   Output ~ 0
 ZONE_4
-Text HLabel 2950 4450 0    50   Input ~ 0
+Text HLabel 2950 4350 0    50   Input ~ 0
 Data
 Text HLabel 2950 4250 0    50   Input ~ 0
 Button
@@ -49,8 +49,6 @@ Wire Wire Line
 	8050 4150 7800 4150
 Wire Wire Line
 	2950 4150 3200 4150
-Wire Wire Line
-	2950 4450 3200 4450
 $Comp
 L rx:CONN_08LOCK J3
 U 1 1 60142850
@@ -112,9 +110,11 @@ Wire Wire Line
 Wire Wire Line
 	2900 4050 3200 4050
 NoConn ~ 3200 3750
-NoConn ~ 3200 4350
 Wire Wire Line
 	3200 4250 2950 4250
 Wire Wire Line
 	3200 4550 2950 4550
+Wire Wire Line
+	3200 4350 2950 4350
+NoConn ~ 3200 4450
 $EndSCHEMATC

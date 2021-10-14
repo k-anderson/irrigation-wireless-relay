@@ -1,0 +1,292 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L tx:H11L1M U1
+U 1 1 601275F3
+P 4550 1800
+F 0 "U1" H 5450 2187 60  0000 C CNN
+F 1 "H11L1M" H 5450 2081 60  0000 C CNN
+F 2 "tx:H11L1M" H 5450 2040 60  0001 C CNN
+F 3 "" H 4550 1800 60  0000 C CNN
+F 4 "H11L1-MQT-ND" H 4550 1800 50  0001 C CNN "Digi-Key_PN"
+	1    4550 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L tx:D D2
+U 1 1 60129A21
+P 4050 6050
+F 0 "D2" H 4050 6267 50  0000 C CNN
+F 1 "D" H 4050 6176 50  0000 C CNN
+F 2 "tx:D_DO-41_SOD81_P10.16mm_Horizontal" H 4050 6050 50  0001 C CNN
+F 3 "" H 4050 6050 50  0001 C CNN
+	1    4050 6050
+	1    0    0    -1  
+$EndComp
+Text HLabel 2950 1800 0    50   Input ~ 0
+IN_1
+Text HLabel 3000 3000 0    50   Input ~ 0
+IN_2
+Text HLabel 3050 4150 0    50   Input ~ 0
+IN_3
+Text HLabel 3100 5350 0    50   Input ~ 0
+IN_4
+Text HLabel 6600 2000 2    50   Output ~ 0
+OUT_1
+Text HLabel 6600 3200 2    50   Output ~ 0
+OUT_2
+Text HLabel 6650 4350 2    50   Output ~ 0
+OUT_3
+Text HLabel 6700 5550 2    50   Output ~ 0
+OUT_4
+Text HLabel 3500 6050 0    50   Output ~ 0
+COM
+$Comp
+L tx:H11L1M U3
+U 1 1 60148252
+P 4600 4150
+F 0 "U3" H 5500 4537 60  0000 C CNN
+F 1 "H11L1M" H 5500 4431 60  0000 C CNN
+F 2 "tx:H11L1M" H 5500 4390 60  0001 C CNN
+F 3 "" H 4600 4150 60  0000 C CNN
+F 4 "H11L1-MQT-ND" H 4600 4150 50  0001 C CNN "Digi-Key_PN"
+	1    4600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L tx:H11L1M U4
+U 1 1 60148AC4
+P 4650 5350
+F 0 "U4" H 5550 5737 60  0000 C CNN
+F 1 "H11L1M" H 5550 5631 60  0000 C CNN
+F 2 "tx:H11L1M" H 5550 5590 60  0001 C CNN
+F 3 "" H 4650 5350 60  0000 C CNN
+F 4 "H11L1-MQT-ND" H 4650 5350 50  0001 C CNN "Digi-Key_PN"
+	1    4650 5350
+	1    0    0    -1  
+$EndComp
+Text GLabel 6600 1900 2    50   Input ~ 0
+Vss
+Text GLabel 6600 3100 2    50   Input ~ 0
+Vss
+Text GLabel 6650 4250 2    50   Input ~ 0
+Vss
+Text GLabel 6700 5450 2    50   Input ~ 0
+Vss
+Text GLabel 6600 1800 2    50   Input ~ 0
+Vdd
+Text GLabel 6600 3000 2    50   Input ~ 0
+Vdd
+Text GLabel 6650 4150 2    50   Input ~ 0
+Vdd
+Text GLabel 6700 5350 2    50   Input ~ 0
+Vdd
+Wire Wire Line
+	6350 1800 6600 1800
+Wire Wire Line
+	6350 1900 6600 1900
+Wire Wire Line
+	6350 2000 6600 2000
+Wire Wire Line
+	6350 3000 6600 3000
+Wire Wire Line
+	6350 3100 6600 3100
+Wire Wire Line
+	6350 3200 6600 3200
+Wire Wire Line
+	6400 4150 6650 4150
+Wire Wire Line
+	6400 4250 6650 4250
+Wire Wire Line
+	6400 4350 6650 4350
+Wire Wire Line
+	6450 5350 6700 5350
+Wire Wire Line
+	6450 5450 6700 5450
+Wire Wire Line
+	6450 5550 6700 5550
+Wire Wire Line
+	4550 1900 4400 1900
+Wire Wire Line
+	4400 5450 4650 5450
+Wire Wire Line
+	4600 4250 4400 4250
+Wire Wire Line
+	4400 4250 4400 4450
+Wire Wire Line
+	3900 6050 3500 6050
+Connection ~ 4400 4250
+Wire Wire Line
+	4400 1900 4400 2100
+Wire Wire Line
+	3850 2100 4400 2100
+Connection ~ 3850 1800
+Wire Wire Line
+	4550 1800 3850 1800
+Wire Wire Line
+	3550 1800 3850 1800
+Wire Wire Line
+	2950 1800 3250 1800
+Wire Wire Line
+	4400 3100 4400 3300
+Connection ~ 4400 3100
+Wire Wire Line
+	4550 3100 4400 3100
+$Comp
+L tx:H11L1M U2
+U 1 1 601474F1
+P 4550 3000
+F 0 "U2" H 5450 3387 60  0000 C CNN
+F 1 "H11L1M" H 5450 3281 60  0000 C CNN
+F 2 "tx:H11L1M" H 5450 3240 60  0001 C CNN
+F 3 "" H 4550 3000 60  0000 C CNN
+F 4 "H11L1-MQT-ND" H 4550 3000 50  0001 C CNN "Digi-Key_PN"
+	1    4550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L tx:CP C1
+U 1 1 60128CEF
+P 3850 1950
+F 0 "C1" H 3968 1996 50  0000 L CNN
+F 1 "470uF" H 3968 1905 50  0000 L CNN
+F 2 "tx:CP_Radial_D16.0mm_P7.50mm" H 3888 1800 50  0001 C CNN
+F 3 "" H 3850 1950 50  0001 C CNN
+	1    3850 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L tx:R R2
+U 1 1 60128331
+P 3400 1800
+F 0 "R2" V 3193 1800 50  0000 C CNN
+F 1 "1.2K" V 3284 1800 50  0000 C CNN
+F 2 "tx:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 3330 1800 50  0001 C CNN
+F 3 "" H 3400 1800 50  0001 C CNN
+	1    3400 1800
+	0    1    1    0   
+$EndComp
+Connection ~ 4400 2100
+Wire Wire Line
+	4400 2100 4400 3100
+$Comp
+L tx:CP C2
+U 1 1 6015471F
+P 3900 3150
+F 0 "C2" H 4018 3196 50  0000 L CNN
+F 1 "470uF" H 4018 3105 50  0000 L CNN
+F 2 "tx:CP_Radial_D16.0mm_P7.50mm" H 3938 3000 50  0001 C CNN
+F 3 "" H 3900 3150 50  0001 C CNN
+	1    3900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L tx:CP C3
+U 1 1 6015506B
+P 3950 4300
+F 0 "C3" H 4068 4346 50  0000 L CNN
+F 1 "470uF" H 4068 4255 50  0000 L CNN
+F 2 "tx:CP_Radial_D16.0mm_P7.50mm" H 3988 4150 50  0001 C CNN
+F 3 "" H 3950 4300 50  0001 C CNN
+	1    3950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L tx:CP C4
+U 1 1 60155739
+P 4000 5500
+F 0 "C4" H 4118 5546 50  0000 L CNN
+F 1 "470uF" H 4118 5455 50  0000 L CNN
+F 2 "tx:CP_Radial_D16.0mm_P7.50mm" H 4038 5350 50  0001 C CNN
+F 3 "" H 4000 5500 50  0001 C CNN
+	1    4000 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L tx:R R3
+U 1 1 60155D5D
+P 3450 3000
+F 0 "R3" V 3243 3000 50  0000 C CNN
+F 1 "1.2K" V 3334 3000 50  0000 C CNN
+F 2 "tx:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 3380 3000 50  0001 C CNN
+F 3 "" H 3450 3000 50  0001 C CNN
+	1    3450 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L tx:R R4
+U 1 1 6015613E
+P 3500 4150
+F 0 "R4" V 3293 4150 50  0000 C CNN
+F 1 "1.2K" V 3384 4150 50  0000 C CNN
+F 2 "tx:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 3430 4150 50  0001 C CNN
+F 3 "" H 3500 4150 50  0001 C CNN
+	1    3500 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L tx:R R5
+U 1 1 60156931
+P 3550 5350
+F 0 "R5" V 3343 5350 50  0000 C CNN
+F 1 "1.2K" V 3434 5350 50  0000 C CNN
+F 2 "tx:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 3480 5350 50  0001 C CNN
+F 3 "" H 3550 5350 50  0001 C CNN
+	1    3550 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 3000 3300 3000
+Wire Wire Line
+	3600 3000 3900 3000
+Wire Wire Line
+	4550 3000 3900 3000
+Connection ~ 3900 3000
+Wire Wire Line
+	3900 3300 4400 3300
+Connection ~ 4400 3300
+Wire Wire Line
+	4400 3300 4400 4250
+Wire Wire Line
+	3050 4150 3350 4150
+Wire Wire Line
+	3650 4150 3950 4150
+Wire Wire Line
+	4600 4150 3950 4150
+Connection ~ 3950 4150
+Wire Wire Line
+	3950 4450 4400 4450
+Connection ~ 4400 4450
+Wire Wire Line
+	4400 4450 4400 5450
+Wire Wire Line
+	4650 5350 4000 5350
+Wire Wire Line
+	4000 5350 3700 5350
+Connection ~ 4000 5350
+Wire Wire Line
+	4400 5450 4400 5650
+Wire Wire Line
+	4400 6050 4200 6050
+Connection ~ 4400 5450
+Wire Wire Line
+	4000 5650 4400 5650
+Connection ~ 4400 5650
+Wire Wire Line
+	4400 5650 4400 6050
+Wire Wire Line
+	3100 5350 3400 5350
+$EndSCHEMATC

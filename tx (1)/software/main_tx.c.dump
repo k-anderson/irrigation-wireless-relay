@@ -1,0 +1,1200 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win32A" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="32"/>
+  <rawtokens>
+    <file index="0" name="main_tx.c"/>
+    <file index="1" name="system.h"/>
+    <tok fileIndex="0" linenr="1" column="1" str="/*x * File:   main.cx * Author: kandersonx *x * Created on January 20, 2021, 2:11 PMx */"/>
+    <tok fileIndex="0" linenr="8" column="1" str="#"/>
+    <tok fileIndex="0" linenr="8" column="2" str="include"/>
+    <tok fileIndex="0" linenr="8" column="10" str="&lt;xc.h&gt;"/>
+    <tok fileIndex="0" linenr="10" column="1" str="// PIC16F627A Configuration Bit Settings"/>
+    <tok fileIndex="0" linenr="11" column="1" str="#"/>
+    <tok fileIndex="0" linenr="11" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="11" column="9" str="config"/>
+    <tok fileIndex="0" linenr="11" column="16" str="FOSC"/>
+    <tok fileIndex="0" linenr="11" column="21" str="="/>
+    <tok fileIndex="0" linenr="11" column="23" str="INTOSCIO"/>
+    <tok fileIndex="0" linenr="11" column="33" str="// Oscillator Selection bits (INTOSC oscillator: I/O function on RA6/OSC2/CLKOUT pin, I/O function on RA7/OSC1/CLKIN)"/>
+    <tok fileIndex="0" linenr="12" column="1" str="#"/>
+    <tok fileIndex="0" linenr="12" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="12" column="9" str="config"/>
+    <tok fileIndex="0" linenr="12" column="16" str="WDTE"/>
+    <tok fileIndex="0" linenr="12" column="21" str="="/>
+    <tok fileIndex="0" linenr="12" column="23" str="OFF"/>
+    <tok fileIndex="0" linenr="12" column="33" str="// Watchdog Timer Enable bit (WDT disabled)"/>
+    <tok fileIndex="0" linenr="13" column="1" str="#"/>
+    <tok fileIndex="0" linenr="13" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="13" column="9" str="config"/>
+    <tok fileIndex="0" linenr="13" column="16" str="PWRTE"/>
+    <tok fileIndex="0" linenr="13" column="22" str="="/>
+    <tok fileIndex="0" linenr="13" column="24" str="OFF"/>
+    <tok fileIndex="0" linenr="13" column="33" str="// Power-up Timer Enable bit (PWRT disabled)"/>
+    <tok fileIndex="0" linenr="14" column="1" str="#"/>
+    <tok fileIndex="0" linenr="14" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="14" column="9" str="config"/>
+    <tok fileIndex="0" linenr="14" column="16" str="MCLRE"/>
+    <tok fileIndex="0" linenr="14" column="22" str="="/>
+    <tok fileIndex="0" linenr="14" column="24" str="OFF"/>
+    <tok fileIndex="0" linenr="14" column="33" str="// RA5/MCLR/VPP Pin Function Select bit (RA5/MCLR/VPP pin function is digital input, MCLR internally tied to VDD)"/>
+    <tok fileIndex="0" linenr="15" column="1" str="#"/>
+    <tok fileIndex="0" linenr="15" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="15" column="9" str="config"/>
+    <tok fileIndex="0" linenr="15" column="16" str="BOREN"/>
+    <tok fileIndex="0" linenr="15" column="22" str="="/>
+    <tok fileIndex="0" linenr="15" column="24" str="OFF"/>
+    <tok fileIndex="0" linenr="15" column="33" str="// Brown-out Detect Enable bit (BOD disabled)"/>
+    <tok fileIndex="0" linenr="16" column="1" str="#"/>
+    <tok fileIndex="0" linenr="16" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="16" column="9" str="config"/>
+    <tok fileIndex="0" linenr="16" column="16" str="LVP"/>
+    <tok fileIndex="0" linenr="16" column="20" str="="/>
+    <tok fileIndex="0" linenr="16" column="22" str="OFF"/>
+    <tok fileIndex="0" linenr="16" column="34" str="// Low-Voltage Programming Enable bit (RB4/PGM pin has PGM function, low-voltage programming enabled)"/>
+    <tok fileIndex="0" linenr="17" column="1" str="#"/>
+    <tok fileIndex="0" linenr="17" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="17" column="9" str="config"/>
+    <tok fileIndex="0" linenr="17" column="16" str="CPD"/>
+    <tok fileIndex="0" linenr="17" column="20" str="="/>
+    <tok fileIndex="0" linenr="17" column="22" str="OFF"/>
+    <tok fileIndex="0" linenr="17" column="33" str="// Data EE Memory Code Protection bit (Data memory code protection off)"/>
+    <tok fileIndex="0" linenr="18" column="1" str="#"/>
+    <tok fileIndex="0" linenr="18" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="18" column="9" str="config"/>
+    <tok fileIndex="0" linenr="18" column="16" str="CP"/>
+    <tok fileIndex="0" linenr="18" column="19" str="="/>
+    <tok fileIndex="0" linenr="18" column="21" str="OFF"/>
+    <tok fileIndex="0" linenr="18" column="33" str="// Flash Program Memory Code Protection bit (Code protection off)"/>
+    <tok fileIndex="0" linenr="20" column="1" str="#"/>
+    <tok fileIndex="0" linenr="20" column="2" str="include"/>
+    <tok fileIndex="0" linenr="20" column="10" str="&quot;system.h&quot;"/>
+    <tok fileIndex="0" linenr="20" column="28" str="/* System funct/params, like osc/peripheral config */"/>
+    <tok fileIndex="0" linenr="22" column="1" str="enum"/>
+    <tok fileIndex="0" linenr="22" column="6" str="{"/>
+    <tok fileIndex="0" linenr="23" column="5" str="IDLE"/>
+    <tok fileIndex="0" linenr="23" column="10" str="="/>
+    <tok fileIndex="0" linenr="23" column="12" str="0"/>
+    <tok fileIndex="0" linenr="23" column="13" str=","/>
+    <tok fileIndex="0" linenr="24" column="5" str="ZONE_1"/>
+    <tok fileIndex="0" linenr="24" column="11" str=","/>
+    <tok fileIndex="0" linenr="25" column="5" str="ZONE_2"/>
+    <tok fileIndex="0" linenr="25" column="11" str=","/>
+    <tok fileIndex="0" linenr="26" column="5" str="ZONE_3"/>
+    <tok fileIndex="0" linenr="26" column="11" str=","/>
+    <tok fileIndex="0" linenr="27" column="5" str="ZONE_4"/>
+    <tok fileIndex="0" linenr="27" column="11" str=","/>
+    <tok fileIndex="0" linenr="28" column="5" str="PAIRING"/>
+    <tok fileIndex="0" linenr="29" column="1" str="}"/>
+    <tok fileIndex="0" linenr="29" column="2" str=";"/>
+    <tok fileIndex="0" linenr="31" column="1" str="unsigned"/>
+    <tok fileIndex="0" linenr="31" column="10" str="char"/>
+    <tok fileIndex="0" linenr="31" column="15" str="state"/>
+    <tok fileIndex="0" linenr="31" column="21" str="="/>
+    <tok fileIndex="0" linenr="31" column="23" str="IDLE"/>
+    <tok fileIndex="0" linenr="31" column="27" str=";"/>
+    <tok fileIndex="0" linenr="32" column="1" str="unsigned"/>
+    <tok fileIndex="0" linenr="32" column="10" str="char"/>
+    <tok fileIndex="0" linenr="32" column="15" str="saved_state"/>
+    <tok fileIndex="0" linenr="32" column="27" str="="/>
+    <tok fileIndex="0" linenr="32" column="29" str="IDLE"/>
+    <tok fileIndex="0" linenr="32" column="33" str=";"/>
+    <tok fileIndex="0" linenr="33" column="1" str="unsigned"/>
+    <tok fileIndex="0" linenr="33" column="10" str="char"/>
+    <tok fileIndex="0" linenr="33" column="15" str="blink_patterns"/>
+    <tok fileIndex="0" linenr="33" column="29" str="["/>
+    <tok fileIndex="0" linenr="33" column="30" str="]"/>
+    <tok fileIndex="0" linenr="33" column="32" str="="/>
+    <tok fileIndex="0" linenr="33" column="34" str="{"/>
+    <tok fileIndex="0" linenr="34" column="5" str="0b11110000"/>
+    <tok fileIndex="0" linenr="34" column="15" str=","/>
+    <tok fileIndex="0" linenr="35" column="5" str="0b10000000"/>
+    <tok fileIndex="0" linenr="35" column="15" str=","/>
+    <tok fileIndex="0" linenr="36" column="5" str="0b10100000"/>
+    <tok fileIndex="0" linenr="36" column="15" str=","/>
+    <tok fileIndex="0" linenr="37" column="5" str="0b10101000"/>
+    <tok fileIndex="0" linenr="37" column="15" str=","/>
+    <tok fileIndex="0" linenr="38" column="5" str="0b10101010"/>
+    <tok fileIndex="0" linenr="38" column="15" str=","/>
+    <tok fileIndex="0" linenr="39" column="5" str="0b11111111"/>
+    <tok fileIndex="0" linenr="39" column="15" str=","/>
+    <tok fileIndex="0" linenr="40" column="1" str="}"/>
+    <tok fileIndex="0" linenr="40" column="2" str=";"/>
+    <tok fileIndex="0" linenr="41" column="1" str="unsigned"/>
+    <tok fileIndex="0" linenr="41" column="10" str="char"/>
+    <tok fileIndex="0" linenr="41" column="15" str="blink_frame"/>
+    <tok fileIndex="0" linenr="41" column="27" str="="/>
+    <tok fileIndex="0" linenr="41" column="29" str="0"/>
+    <tok fileIndex="0" linenr="41" column="30" str=";"/>
+    <tok fileIndex="0" linenr="43" column="1" str="void"/>
+    <tok fileIndex="0" linenr="43" column="6" str="initialize_hw"/>
+    <tok fileIndex="0" linenr="43" column="19" str="("/>
+    <tok fileIndex="0" linenr="43" column="20" str=")"/>
+    <tok fileIndex="0" linenr="43" column="22" str="{"/>
+    <tok fileIndex="0" linenr="44" column="5" str="// PORT B"/>
+    <tok fileIndex="0" linenr="45" column="5" str="PORTB"/>
+    <tok fileIndex="0" linenr="45" column="11" str="="/>
+    <tok fileIndex="0" linenr="45" column="13" str="0xF7"/>
+    <tok fileIndex="0" linenr="45" column="17" str=";"/>
+    <tok fileIndex="0" linenr="46" column="5" str="TRISB"/>
+    <tok fileIndex="0" linenr="46" column="11" str="="/>
+    <tok fileIndex="0" linenr="46" column="13" str="0xF1"/>
+    <tok fileIndex="0" linenr="46" column="17" str=";"/>
+    <tok fileIndex="0" linenr="47" column="5" str="OPTION_REGbits"/>
+    <tok fileIndex="0" linenr="47" column="19" str="."/>
+    <tok fileIndex="0" linenr="47" column="20" str="nRBPU"/>
+    <tok fileIndex="0" linenr="47" column="26" str="="/>
+    <tok fileIndex="0" linenr="47" column="28" str="0"/>
+    <tok fileIndex="0" linenr="47" column="29" str=";"/>
+    <tok fileIndex="0" linenr="47" column="31" str="// enable port b pull up resistors"/>
+    <tok fileIndex="0" linenr="48" column="5" str="INTCONbits"/>
+    <tok fileIndex="0" linenr="48" column="15" str="."/>
+    <tok fileIndex="0" linenr="48" column="16" str="RBIF"/>
+    <tok fileIndex="0" linenr="48" column="21" str="="/>
+    <tok fileIndex="0" linenr="48" column="23" str="0"/>
+    <tok fileIndex="0" linenr="48" column="24" str=";"/>
+    <tok fileIndex="0" linenr="48" column="26" str="// ensure port b flag is not already set"/>
+    <tok fileIndex="0" linenr="49" column="5" str="INTCONbits"/>
+    <tok fileIndex="0" linenr="49" column="15" str="."/>
+    <tok fileIndex="0" linenr="49" column="16" str="RBIE"/>
+    <tok fileIndex="0" linenr="49" column="21" str="="/>
+    <tok fileIndex="0" linenr="49" column="23" str="1"/>
+    <tok fileIndex="0" linenr="49" column="24" str=";"/>
+    <tok fileIndex="0" linenr="49" column="26" str="// enable port b state change interrupts"/>
+    <tok fileIndex="0" linenr="51" column="5" str="// UART"/>
+    <tok fileIndex="0" linenr="52" column="5" str="RCSTAbits"/>
+    <tok fileIndex="0" linenr="52" column="14" str="."/>
+    <tok fileIndex="0" linenr="52" column="15" str="SPEN"/>
+    <tok fileIndex="0" linenr="52" column="20" str="="/>
+    <tok fileIndex="0" linenr="52" column="22" str="0"/>
+    <tok fileIndex="0" linenr="52" column="23" str=";"/>
+    <tok fileIndex="0" linenr="52" column="25" str="// enable UART"/>
+    <tok fileIndex="0" linenr="53" column="5" str="TXSTAbits"/>
+    <tok fileIndex="0" linenr="53" column="14" str="."/>
+    <tok fileIndex="0" linenr="53" column="15" str="SYNC"/>
+    <tok fileIndex="0" linenr="53" column="20" str="="/>
+    <tok fileIndex="0" linenr="53" column="22" str="0"/>
+    <tok fileIndex="0" linenr="53" column="23" str=";"/>
+    <tok fileIndex="0" linenr="53" column="25" str="// set UART to asynchronous"/>
+    <tok fileIndex="0" linenr="54" column="5" str="TXSTAbits"/>
+    <tok fileIndex="0" linenr="54" column="14" str="."/>
+    <tok fileIndex="0" linenr="54" column="15" str="BRGH"/>
+    <tok fileIndex="0" linenr="54" column="20" str="="/>
+    <tok fileIndex="0" linenr="54" column="22" str="0"/>
+    <tok fileIndex="0" linenr="54" column="23" str=";"/>
+    <tok fileIndex="0" linenr="54" column="25" str="// use a low speed clock"/>
+    <tok fileIndex="0" linenr="55" column="5" str="SPBRG"/>
+    <tok fileIndex="0" linenr="55" column="11" str="="/>
+    <tok fileIndex="0" linenr="55" column="13" str="0x33"/>
+    <tok fileIndex="0" linenr="55" column="17" str=";"/>
+    <tok fileIndex="0" linenr="55" column="19" str="// set the baud rate to 300"/>
+    <tok fileIndex="0" linenr="56" column="5" str="TXSTAbits"/>
+    <tok fileIndex="0" linenr="56" column="14" str="."/>
+    <tok fileIndex="0" linenr="56" column="15" str="TXEN"/>
+    <tok fileIndex="0" linenr="56" column="20" str="="/>
+    <tok fileIndex="0" linenr="56" column="22" str="0"/>
+    <tok fileIndex="0" linenr="56" column="23" str=";"/>
+    <tok fileIndex="0" linenr="56" column="25" str="// enable UART TX"/>
+    <tok fileIndex="0" linenr="58" column="5" str="// Timer 1"/>
+    <tok fileIndex="0" linenr="59" column="5" str="TMR1H"/>
+    <tok fileIndex="0" linenr="59" column="11" str="="/>
+    <tok fileIndex="0" linenr="59" column="13" str="0"/>
+    <tok fileIndex="0" linenr="59" column="14" str=";"/>
+    <tok fileIndex="0" linenr="59" column="16" str="// ensure we start from zero"/>
+    <tok fileIndex="0" linenr="60" column="5" str="TMR1L"/>
+    <tok fileIndex="0" linenr="60" column="11" str="="/>
+    <tok fileIndex="0" linenr="60" column="13" str="0"/>
+    <tok fileIndex="0" linenr="60" column="14" str=";"/>
+    <tok fileIndex="0" linenr="61" column="5" str="T1CONbits"/>
+    <tok fileIndex="0" linenr="61" column="14" str="."/>
+    <tok fileIndex="0" linenr="61" column="15" str="T1CKPS0"/>
+    <tok fileIndex="0" linenr="61" column="23" str="="/>
+    <tok fileIndex="0" linenr="61" column="25" str="1"/>
+    <tok fileIndex="0" linenr="61" column="26" str=";"/>
+    <tok fileIndex="0" linenr="61" column="28" str="// set the prescaller to 1:8"/>
+    <tok fileIndex="0" linenr="62" column="5" str="T1CONbits"/>
+    <tok fileIndex="0" linenr="62" column="14" str="."/>
+    <tok fileIndex="0" linenr="62" column="15" str="T1CKPS1"/>
+    <tok fileIndex="0" linenr="62" column="23" str="="/>
+    <tok fileIndex="0" linenr="62" column="25" str="0"/>
+    <tok fileIndex="0" linenr="62" column="26" str=";"/>
+    <tok fileIndex="0" linenr="63" column="5" str="T1CONbits"/>
+    <tok fileIndex="0" linenr="63" column="14" str="."/>
+    <tok fileIndex="0" linenr="63" column="15" str="T1OSCEN"/>
+    <tok fileIndex="0" linenr="63" column="23" str="="/>
+    <tok fileIndex="0" linenr="63" column="25" str="0"/>
+    <tok fileIndex="0" linenr="63" column="26" str=";"/>
+    <tok fileIndex="0" linenr="63" column="28" str="// disable the external osc"/>
+    <tok fileIndex="0" linenr="64" column="5" str="T1CONbits"/>
+    <tok fileIndex="0" linenr="64" column="14" str="."/>
+    <tok fileIndex="0" linenr="64" column="15" str="TMR1CS"/>
+    <tok fileIndex="0" linenr="64" column="22" str="="/>
+    <tok fileIndex="0" linenr="64" column="24" str="0"/>
+    <tok fileIndex="0" linenr="64" column="25" str=";"/>
+    <tok fileIndex="0" linenr="64" column="27" str="// set the clock source to internal (FOSC/4)"/>
+    <tok fileIndex="0" linenr="65" column="5" str="PIR1bits"/>
+    <tok fileIndex="0" linenr="65" column="13" str="."/>
+    <tok fileIndex="0" linenr="65" column="14" str="TMR1IF"/>
+    <tok fileIndex="0" linenr="65" column="21" str="="/>
+    <tok fileIndex="0" linenr="65" column="23" str="0"/>
+    <tok fileIndex="0" linenr="65" column="24" str=";"/>
+    <tok fileIndex="0" linenr="65" column="26" str="// ensure timer 1 flag is not already set"/>
+    <tok fileIndex="0" linenr="66" column="5" str="PIE1bits"/>
+    <tok fileIndex="0" linenr="66" column="13" str="."/>
+    <tok fileIndex="0" linenr="66" column="14" str="TMR1IE"/>
+    <tok fileIndex="0" linenr="66" column="21" str="="/>
+    <tok fileIndex="0" linenr="66" column="23" str="1"/>
+    <tok fileIndex="0" linenr="66" column="24" str=";"/>
+    <tok fileIndex="0" linenr="66" column="26" str="// enable timer 1 interrupts"/>
+    <tok fileIndex="0" linenr="67" column="5" str="T1CONbits"/>
+    <tok fileIndex="0" linenr="67" column="14" str="."/>
+    <tok fileIndex="0" linenr="67" column="15" str="TMR1ON"/>
+    <tok fileIndex="0" linenr="67" column="22" str="="/>
+    <tok fileIndex="0" linenr="67" column="24" str="1"/>
+    <tok fileIndex="0" linenr="67" column="25" str=";"/>
+    <tok fileIndex="0" linenr="67" column="27" str="// enable timer 1"/>
+    <tok fileIndex="0" linenr="69" column="5" str="// Interrupts"/>
+    <tok fileIndex="0" linenr="70" column="5" str="INTCONbits"/>
+    <tok fileIndex="0" linenr="70" column="15" str="."/>
+    <tok fileIndex="0" linenr="70" column="16" str="GIE"/>
+    <tok fileIndex="0" linenr="70" column="20" str="="/>
+    <tok fileIndex="0" linenr="70" column="22" str="1"/>
+    <tok fileIndex="0" linenr="70" column="23" str=";"/>
+    <tok fileIndex="0" linenr="70" column="25" str="// enable general interrupts"/>
+    <tok fileIndex="0" linenr="71" column="5" str="INTCONbits"/>
+    <tok fileIndex="0" linenr="71" column="15" str="."/>
+    <tok fileIndex="0" linenr="71" column="16" str="PEIE"/>
+    <tok fileIndex="0" linenr="71" column="21" str="="/>
+    <tok fileIndex="0" linenr="71" column="23" str="1"/>
+    <tok fileIndex="0" linenr="71" column="24" str=";"/>
+    <tok fileIndex="0" linenr="71" column="26" str="// enable peripheral interrupts"/>
+    <tok fileIndex="0" linenr="72" column="1" str="}"/>
+    <tok fileIndex="0" linenr="74" column="1" str="unsigned"/>
+    <tok fileIndex="0" linenr="74" column="10" str="char"/>
+    <tok fileIndex="0" linenr="74" column="15" str="handle_port_b_change"/>
+    <tok fileIndex="0" linenr="74" column="35" str="("/>
+    <tok fileIndex="0" linenr="74" column="36" str=")"/>
+    <tok fileIndex="0" linenr="74" column="38" str="{"/>
+    <tok fileIndex="0" linenr="75" column="5" str="blink_frame"/>
+    <tok fileIndex="0" linenr="75" column="17" str="="/>
+    <tok fileIndex="0" linenr="75" column="19" str="0"/>
+    <tok fileIndex="0" linenr="75" column="20" str=";"/>
+    <tok fileIndex="0" linenr="77" column="5" str="if"/>
+    <tok fileIndex="0" linenr="77" column="8" str="("/>
+    <tok fileIndex="0" linenr="77" column="9" str="!"/>
+    <tok fileIndex="0" linenr="77" column="10" str="PORTBbits"/>
+    <tok fileIndex="0" linenr="77" column="19" str="."/>
+    <tok fileIndex="0" linenr="77" column="20" str="RB7"/>
+    <tok fileIndex="0" linenr="77" column="23" str=")"/>
+    <tok fileIndex="0" linenr="77" column="25" str="{"/>
+    <tok fileIndex="0" linenr="78" column="9" str="return"/>
+    <tok fileIndex="0" linenr="78" column="16" str="ZONE_1"/>
+    <tok fileIndex="0" linenr="78" column="22" str=";"/>
+    <tok fileIndex="0" linenr="79" column="5" str="}"/>
+    <tok fileIndex="0" linenr="81" column="5" str="if"/>
+    <tok fileIndex="0" linenr="81" column="8" str="("/>
+    <tok fileIndex="0" linenr="81" column="9" str="!"/>
+    <tok fileIndex="0" linenr="81" column="10" str="PORTBbits"/>
+    <tok fileIndex="0" linenr="81" column="19" str="."/>
+    <tok fileIndex="0" linenr="81" column="20" str="RB6"/>
+    <tok fileIndex="0" linenr="81" column="23" str=")"/>
+    <tok fileIndex="0" linenr="81" column="25" str="{"/>
+    <tok fileIndex="0" linenr="82" column="9" str="return"/>
+    <tok fileIndex="0" linenr="82" column="16" str="ZONE_2"/>
+    <tok fileIndex="0" linenr="82" column="22" str=";"/>
+    <tok fileIndex="0" linenr="83" column="5" str="}"/>
+    <tok fileIndex="0" linenr="85" column="5" str="if"/>
+    <tok fileIndex="0" linenr="85" column="8" str="("/>
+    <tok fileIndex="0" linenr="85" column="9" str="!"/>
+    <tok fileIndex="0" linenr="85" column="10" str="PORTBbits"/>
+    <tok fileIndex="0" linenr="85" column="19" str="."/>
+    <tok fileIndex="0" linenr="85" column="20" str="RB5"/>
+    <tok fileIndex="0" linenr="85" column="23" str=")"/>
+    <tok fileIndex="0" linenr="85" column="25" str="{"/>
+    <tok fileIndex="0" linenr="86" column="9" str="return"/>
+    <tok fileIndex="0" linenr="86" column="16" str="ZONE_3"/>
+    <tok fileIndex="0" linenr="86" column="22" str=";"/>
+    <tok fileIndex="0" linenr="87" column="5" str="}"/>
+    <tok fileIndex="0" linenr="89" column="5" str="if"/>
+    <tok fileIndex="0" linenr="89" column="8" str="("/>
+    <tok fileIndex="0" linenr="89" column="9" str="!"/>
+    <tok fileIndex="0" linenr="89" column="10" str="PORTBbits"/>
+    <tok fileIndex="0" linenr="89" column="19" str="."/>
+    <tok fileIndex="0" linenr="89" column="20" str="RB4"/>
+    <tok fileIndex="0" linenr="89" column="23" str=")"/>
+    <tok fileIndex="0" linenr="89" column="25" str="{"/>
+    <tok fileIndex="0" linenr="90" column="9" str="return"/>
+    <tok fileIndex="0" linenr="90" column="16" str="ZONE_4"/>
+    <tok fileIndex="0" linenr="90" column="22" str=";"/>
+    <tok fileIndex="0" linenr="91" column="5" str="}"/>
+    <tok fileIndex="0" linenr="93" column="5" str="return"/>
+    <tok fileIndex="0" linenr="93" column="12" str="IDLE"/>
+    <tok fileIndex="0" linenr="93" column="16" str=";"/>
+    <tok fileIndex="0" linenr="94" column="1" str="}"/>
+    <tok fileIndex="0" linenr="96" column="1" str="void"/>
+    <tok fileIndex="0" linenr="96" column="6" str="handle_timer_1_overflow"/>
+    <tok fileIndex="0" linenr="96" column="29" str="("/>
+    <tok fileIndex="0" linenr="96" column="30" str=")"/>
+    <tok fileIndex="0" linenr="96" column="32" str="{"/>
+    <tok fileIndex="0" linenr="97" column="5" str="if"/>
+    <tok fileIndex="0" linenr="97" column="8" str="("/>
+    <tok fileIndex="0" linenr="97" column="9" str="blink_frame"/>
+    <tok fileIndex="0" linenr="97" column="21" str="&lt;"/>
+    <tok fileIndex="0" linenr="97" column="23" str="8"/>
+    <tok fileIndex="0" linenr="97" column="24" str=")"/>
+    <tok fileIndex="0" linenr="97" column="26" str="{"/>
+    <tok fileIndex="0" linenr="98" column="9" str="PORTBbits"/>
+    <tok fileIndex="0" linenr="98" column="18" str="."/>
+    <tok fileIndex="0" linenr="98" column="19" str="RB3"/>
+    <tok fileIndex="0" linenr="98" column="23" str="="/>
+    <tok fileIndex="0" linenr="98" column="25" str="("/>
+    <tok fileIndex="0" linenr="98" column="26" str="blink_patterns"/>
+    <tok fileIndex="0" linenr="98" column="40" str="["/>
+    <tok fileIndex="0" linenr="98" column="41" str="state"/>
+    <tok fileIndex="0" linenr="98" column="46" str="]"/>
+    <tok fileIndex="0" linenr="98" column="48" str="&amp;"/>
+    <tok fileIndex="0" linenr="98" column="50" str="("/>
+    <tok fileIndex="0" linenr="98" column="51" str="1"/>
+    <tok fileIndex="0" linenr="98" column="53" str="&lt;&lt;"/>
+    <tok fileIndex="0" linenr="98" column="56" str="blink_frame"/>
+    <tok fileIndex="0" linenr="98" column="67" str=")"/>
+    <tok fileIndex="0" linenr="98" column="68" str=")"/>
+    <tok fileIndex="0" linenr="98" column="70" str="?"/>
+    <tok fileIndex="0" linenr="98" column="72" str="1"/>
+    <tok fileIndex="0" linenr="98" column="74" str=":"/>
+    <tok fileIndex="0" linenr="98" column="76" str="0"/>
+    <tok fileIndex="0" linenr="98" column="77" str=";"/>
+    <tok fileIndex="0" linenr="99" column="5" str="}"/>
+    <tok fileIndex="0" linenr="99" column="7" str="else"/>
+    <tok fileIndex="0" linenr="99" column="12" str="if"/>
+    <tok fileIndex="0" linenr="99" column="15" str="("/>
+    <tok fileIndex="0" linenr="99" column="16" str="blink_frame"/>
+    <tok fileIndex="0" linenr="99" column="28" str="&lt;"/>
+    <tok fileIndex="0" linenr="99" column="30" str="16"/>
+    <tok fileIndex="0" linenr="99" column="33" str="&amp;&amp;"/>
+    <tok fileIndex="0" linenr="99" column="36" str="state"/>
+    <tok fileIndex="0" linenr="99" column="42" str="!="/>
+    <tok fileIndex="0" linenr="99" column="45" str="PAIRING"/>
+    <tok fileIndex="0" linenr="99" column="52" str=")"/>
+    <tok fileIndex="0" linenr="99" column="54" str="{"/>
+    <tok fileIndex="0" linenr="100" column="9" str="PORTBbits"/>
+    <tok fileIndex="0" linenr="100" column="18" str="."/>
+    <tok fileIndex="0" linenr="100" column="19" str="RB3"/>
+    <tok fileIndex="0" linenr="100" column="23" str="="/>
+    <tok fileIndex="0" linenr="100" column="25" str="0"/>
+    <tok fileIndex="0" linenr="100" column="26" str=";"/>
+    <tok fileIndex="0" linenr="101" column="5" str="}"/>
+    <tok fileIndex="0" linenr="101" column="7" str="else"/>
+    <tok fileIndex="0" linenr="101" column="12" str="{"/>
+    <tok fileIndex="0" linenr="102" column="9" str="blink_frame"/>
+    <tok fileIndex="0" linenr="102" column="21" str="="/>
+    <tok fileIndex="0" linenr="102" column="23" str="0"/>
+    <tok fileIndex="0" linenr="102" column="24" str=";"/>
+    <tok fileIndex="0" linenr="103" column="5" str="}"/>
+    <tok fileIndex="0" linenr="105" column="5" str="blink_frame"/>
+    <tok fileIndex="0" linenr="105" column="16" str="++"/>
+    <tok fileIndex="0" linenr="105" column="18" str=";"/>
+    <tok fileIndex="0" linenr="106" column="5" str="/*x    for (int i = 0; i &lt; state; i++) {x        PORTBbits.RB2 = 1;x        __delay_ms(10);x        PORTBbits.RB2 = (state &amp; (1 &lt;&lt; i)) ? 1 : 0;x        __delay_ms(10);x        PORTBbits.RB2 = 1;x        __delay_ms(10);        x    }x     */"/>
+    <tok fileIndex="0" linenr="116" column="5" str="//TXREG = state;"/>
+    <tok fileIndex="0" linenr="117" column="1" str="}"/>
+    <tok fileIndex="0" linenr="119" column="1" str="void"/>
+    <tok fileIndex="0" linenr="119" column="6" str="__interrupt"/>
+    <tok fileIndex="0" linenr="119" column="17" str="("/>
+    <tok fileIndex="0" linenr="119" column="18" str=")"/>
+    <tok fileIndex="0" linenr="119" column="20" str="interrupt_handler"/>
+    <tok fileIndex="0" linenr="119" column="37" str="("/>
+    <tok fileIndex="0" linenr="119" column="38" str="void"/>
+    <tok fileIndex="0" linenr="119" column="42" str=")"/>
+    <tok fileIndex="0" linenr="119" column="44" str="{"/>
+    <tok fileIndex="0" linenr="120" column="5" str="if"/>
+    <tok fileIndex="0" linenr="120" column="8" str="("/>
+    <tok fileIndex="0" linenr="120" column="9" str="INTCONbits"/>
+    <tok fileIndex="0" linenr="120" column="19" str="."/>
+    <tok fileIndex="0" linenr="120" column="20" str="RBIF"/>
+    <tok fileIndex="0" linenr="120" column="24" str=")"/>
+    <tok fileIndex="0" linenr="120" column="26" str="{"/>
+    <tok fileIndex="0" linenr="121" column="9" str="if"/>
+    <tok fileIndex="0" linenr="121" column="12" str="("/>
+    <tok fileIndex="0" linenr="121" column="13" str="state"/>
+    <tok fileIndex="0" linenr="121" column="19" str="=="/>
+    <tok fileIndex="0" linenr="121" column="22" str="PAIRING"/>
+    <tok fileIndex="0" linenr="121" column="29" str=")"/>
+    <tok fileIndex="0" linenr="121" column="31" str="{"/>
+    <tok fileIndex="0" linenr="122" column="13" str="saved_state"/>
+    <tok fileIndex="0" linenr="122" column="25" str="="/>
+    <tok fileIndex="0" linenr="122" column="27" str="handle_port_b_change"/>
+    <tok fileIndex="0" linenr="122" column="47" str="("/>
+    <tok fileIndex="0" linenr="122" column="48" str=")"/>
+    <tok fileIndex="0" linenr="122" column="49" str=";"/>
+    <tok fileIndex="0" linenr="123" column="9" str="}"/>
+    <tok fileIndex="0" linenr="123" column="11" str="else"/>
+    <tok fileIndex="0" linenr="123" column="16" str="{"/>
+    <tok fileIndex="0" linenr="124" column="13" str="state"/>
+    <tok fileIndex="0" linenr="124" column="19" str="="/>
+    <tok fileIndex="0" linenr="124" column="21" str="handle_port_b_change"/>
+    <tok fileIndex="0" linenr="124" column="41" str="("/>
+    <tok fileIndex="0" linenr="124" column="42" str=")"/>
+    <tok fileIndex="0" linenr="124" column="43" str=";"/>
+    <tok fileIndex="0" linenr="125" column="9" str="}"/>
+    <tok fileIndex="0" linenr="127" column="9" str="INTCONbits"/>
+    <tok fileIndex="0" linenr="127" column="19" str="."/>
+    <tok fileIndex="0" linenr="127" column="20" str="RBIF"/>
+    <tok fileIndex="0" linenr="127" column="25" str="="/>
+    <tok fileIndex="0" linenr="127" column="27" str="0"/>
+    <tok fileIndex="0" linenr="127" column="28" str=";"/>
+    <tok fileIndex="0" linenr="128" column="5" str="}"/>
+    <tok fileIndex="0" linenr="130" column="5" str="if"/>
+    <tok fileIndex="0" linenr="130" column="8" str="("/>
+    <tok fileIndex="0" linenr="130" column="9" str="PIR1bits"/>
+    <tok fileIndex="0" linenr="130" column="17" str="."/>
+    <tok fileIndex="0" linenr="130" column="18" str="TMR1IF"/>
+    <tok fileIndex="0" linenr="130" column="24" str=")"/>
+    <tok fileIndex="0" linenr="130" column="26" str="{"/>
+    <tok fileIndex="0" linenr="131" column="9" str="if"/>
+    <tok fileIndex="0" linenr="131" column="12" str="("/>
+    <tok fileIndex="0" linenr="131" column="13" str="PIE1bits"/>
+    <tok fileIndex="0" linenr="131" column="21" str="."/>
+    <tok fileIndex="0" linenr="131" column="22" str="TMR1IE"/>
+    <tok fileIndex="0" linenr="131" column="28" str=")"/>
+    <tok fileIndex="0" linenr="131" column="30" str="{"/>
+    <tok fileIndex="0" linenr="132" column="13" str="handle_timer_1_overflow"/>
+    <tok fileIndex="0" linenr="132" column="36" str="("/>
+    <tok fileIndex="0" linenr="132" column="37" str=")"/>
+    <tok fileIndex="0" linenr="132" column="38" str=";"/>
+    <tok fileIndex="0" linenr="133" column="9" str="}"/>
+    <tok fileIndex="0" linenr="134" column="9" str="PIR1bits"/>
+    <tok fileIndex="0" linenr="134" column="17" str="."/>
+    <tok fileIndex="0" linenr="134" column="18" str="TMR1IF"/>
+    <tok fileIndex="0" linenr="134" column="25" str="="/>
+    <tok fileIndex="0" linenr="134" column="27" str="0"/>
+    <tok fileIndex="0" linenr="134" column="28" str=";"/>
+    <tok fileIndex="0" linenr="135" column="5" str="}"/>
+    <tok fileIndex="0" linenr="136" column="1" str="}"/>
+    <tok fileIndex="0" linenr="138" column="1" str="void"/>
+    <tok fileIndex="0" linenr="138" column="6" str="main"/>
+    <tok fileIndex="0" linenr="138" column="10" str="("/>
+    <tok fileIndex="0" linenr="138" column="11" str="void"/>
+    <tok fileIndex="0" linenr="138" column="15" str=")"/>
+    <tok fileIndex="0" linenr="138" column="17" str="{"/>
+    <tok fileIndex="0" linenr="139" column="5" str="initialize_hw"/>
+    <tok fileIndex="0" linenr="139" column="18" str="("/>
+    <tok fileIndex="0" linenr="139" column="19" str=")"/>
+    <tok fileIndex="0" linenr="139" column="20" str=";"/>
+    <tok fileIndex="0" linenr="141" column="5" str="while"/>
+    <tok fileIndex="0" linenr="141" column="11" str="("/>
+    <tok fileIndex="0" linenr="141" column="12" str="1"/>
+    <tok fileIndex="0" linenr="141" column="13" str=")"/>
+    <tok fileIndex="0" linenr="141" column="15" str="{"/>
+    <tok fileIndex="0" linenr="142" column="9" str="if"/>
+    <tok fileIndex="0" linenr="142" column="12" str="("/>
+    <tok fileIndex="0" linenr="142" column="13" str="!"/>
+    <tok fileIndex="0" linenr="142" column="14" str="PORTBbits"/>
+    <tok fileIndex="0" linenr="142" column="23" str="."/>
+    <tok fileIndex="0" linenr="142" column="24" str="RB0"/>
+    <tok fileIndex="0" linenr="142" column="27" str=")"/>
+    <tok fileIndex="0" linenr="142" column="29" str="{"/>
+    <tok fileIndex="0" linenr="143" column="13" str="saved_state"/>
+    <tok fileIndex="0" linenr="143" column="25" str="="/>
+    <tok fileIndex="0" linenr="143" column="27" str="state"/>
+    <tok fileIndex="0" linenr="143" column="32" str=";"/>
+    <tok fileIndex="0" linenr="145" column="13" str="state"/>
+    <tok fileIndex="0" linenr="145" column="19" str="="/>
+    <tok fileIndex="0" linenr="145" column="21" str="PAIRING"/>
+    <tok fileIndex="0" linenr="145" column="28" str=";"/>
+    <tok fileIndex="0" linenr="146" column="13" str="__delay_ms"/>
+    <tok fileIndex="0" linenr="146" column="23" str="("/>
+    <tok fileIndex="0" linenr="146" column="24" str="2000"/>
+    <tok fileIndex="0" linenr="146" column="28" str=")"/>
+    <tok fileIndex="0" linenr="146" column="29" str=";"/>
+    <tok fileIndex="0" linenr="147" column="13" str="state"/>
+    <tok fileIndex="0" linenr="147" column="19" str="="/>
+    <tok fileIndex="0" linenr="147" column="21" str="saved_state"/>
+    <tok fileIndex="0" linenr="147" column="32" str=";"/>
+    <tok fileIndex="0" linenr="148" column="9" str="}"/>
+    <tok fileIndex="0" linenr="149" column="5" str="}"/>
+    <tok fileIndex="0" linenr="149" column="6" str=";"/>
+    <tok fileIndex="0" linenr="151" column="5" str="return"/>
+    <tok fileIndex="0" linenr="151" column="11" str=";"/>
+    <tok fileIndex="0" linenr="152" column="1" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <standards>
+    <c version="c11"/>
+    <cpp version="c++20"/>
+  </standards>
+  <directivelist>
+    <directive file="main_tx.c" linenr="8" str="#include &lt;xc.h&gt;"/>
+    <directive file="main_tx.c" linenr="11" str="#pragma config FOSC = INTOSCIO"/>
+    <directive file="main_tx.c" linenr="12" str="#pragma config WDTE = OFF"/>
+    <directive file="main_tx.c" linenr="13" str="#pragma config PWRTE = OFF"/>
+    <directive file="main_tx.c" linenr="14" str="#pragma config MCLRE = OFF"/>
+    <directive file="main_tx.c" linenr="15" str="#pragma config BOREN = OFF"/>
+    <directive file="main_tx.c" linenr="16" str="#pragma config LVP = OFF"/>
+    <directive file="main_tx.c" linenr="17" str="#pragma config CPD = OFF"/>
+    <directive file="main_tx.c" linenr="18" str="#pragma config CP = OFF"/>
+    <directive file="main_tx.c" linenr="20" str="#include &quot;system.h&quot;"/>
+    <directive file="system.h" linenr="6" str="#define _XTAL_FREQ 4000000"/>
+    <directive file="system.h" linenr="8" str="#define bitset(var, bitno) ((var) |= 1UL &lt;&lt; (bitno))"/>
+    <directive file="system.h" linenr="9" str="#define bitclr(var, bitno) ((var) &amp;= ~(1UL &lt;&lt; (bitno)))"/>
+  </directivelist>
+  <tokenlist>
+    <token id="043BB8E8" file="main_tx.c" linenr="22" column="1" str="enum" scope="043BB948" type="name"/>
+    <token id="008067D0" file="main_tx.c" linenr="22" column="0" str="Anonymous0" scope="043BB948" type="name" type-scope="043BB9E0"/>
+    <token id="043BB728" file="main_tx.c" linenr="22" column="6" str="{" scope="043BB9E0" link="0087B148"/>
+    <token id="043BB7A8" file="main_tx.c" linenr="23" column="5" str="IDLE" scope="043BB9E0" type="name" values="007A78A0" astParent="043BB328" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="043BB328" file="main_tx.c" linenr="23" column="10" str="=" scope="043BB9E0" type="op" isAssignmentOp="True" astParent="043BB8A8" astOperand1="043BB7A8" astOperand2="043BB7E8" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="043BB7E8" file="main_tx.c" linenr="23" column="12" str="0" scope="043BB9E0" type="number" isInt="True" values="007A79B0" astParent="043BB328" valueType-type="int" valueType-sign="signed"/>
+    <token id="043BB8A8" file="main_tx.c" linenr="23" column="13" str="," scope="043BB9E0" astParent="043BB3E8" astOperand1="043BB328" astOperand2="043BB268"/>
+    <token id="043BB268" file="main_tx.c" linenr="24" column="5" str="ZONE_1" scope="043BB9E0" type="name" values="007A78C0" astParent="043BB8A8" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="043BB3E8" file="main_tx.c" linenr="24" column="11" str="," scope="043BB9E0" astParent="043BB3A8" astOperand1="043BB8A8" astOperand2="043BB2A8"/>
+    <token id="043BB2A8" file="main_tx.c" linenr="25" column="5" str="ZONE_2" scope="043BB9E0" type="name" values="007A78B0" astParent="043BB3E8" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="043BB3A8" file="main_tx.c" linenr="25" column="11" str="," scope="043BB9E0" astParent="043BB4A8" astOperand1="043BB3E8" astOperand2="043BB428"/>
+    <token id="043BB428" file="main_tx.c" linenr="26" column="5" str="ZONE_3" scope="043BB9E0" type="name" values="007A78D0" astParent="043BB3A8" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="043BB4A8" file="main_tx.c" linenr="26" column="11" str="," scope="043BB9E0" astParent="043BB568" astOperand1="043BB3A8" astOperand2="043BB528"/>
+    <token id="043BB528" file="main_tx.c" linenr="27" column="5" str="ZONE_4" scope="043BB9E0" type="name" values="007A7930" astParent="043BB4A8" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="043BB568" file="main_tx.c" linenr="27" column="11" str="," scope="043BB9E0" astOperand1="043BB4A8" astOperand2="043BB5A8"/>
+    <token id="043BB5A8" file="main_tx.c" linenr="28" column="5" str="PAIRING" scope="043BB9E0" type="name" values="007A78E0" astParent="043BB568" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="0087B148" file="main_tx.c" linenr="29" column="1" str="}" scope="043BB9E0" link="043BB728"/>
+    <token id="0087B388" file="main_tx.c" linenr="29" column="2" str=";" scope="043BB948"/>
+    <token id="0087B108" file="main_tx.c" linenr="31" column="10" str="char" scope="043BB948" type="name" isUnsigned="true"/>
+    <token id="0087AEC8" file="main_tx.c" linenr="31" column="15" str="state" scope="043BB948" type="name" varId="1" variable="008064D8" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="0087AFC8" file="main_tx.c" linenr="31" column="21" str=";" scope="043BB948"/>
+    <token id="00805D10" file="main_tx.c" linenr="31" column="15" str="state" scope="043BB948" type="name" varId="1" variable="008064D8" astParent="00805B90" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00805B90" file="main_tx.c" linenr="31" column="21" str="=" scope="043BB948" type="op" isAssignmentOp="True" astOperand1="00805D10" astOperand2="0087B548" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="0087B548" file="main_tx.c" linenr="31" column="23" str="IDLE" scope="043BB948" type="name" values="007A7960" astParent="00805B90" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="0087AF48" file="main_tx.c" linenr="31" column="27" str=";" scope="043BB948"/>
+    <token id="0087B208" file="main_tx.c" linenr="32" column="10" str="char" scope="043BB948" type="name" isUnsigned="true"/>
+    <token id="0087B3C8" file="main_tx.c" linenr="32" column="15" str="saved_state" scope="043BB948" type="name" varId="2" variable="00806558" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="0087B288" file="main_tx.c" linenr="32" column="27" str=";" scope="043BB948"/>
+    <token id="00806790" file="main_tx.c" linenr="32" column="15" str="saved_state" scope="043BB948" type="name" varId="2" variable="00806558" astParent="00806450" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00806450" file="main_tx.c" linenr="32" column="27" str="=" scope="043BB948" type="op" isAssignmentOp="True" astOperand1="00806790" astOperand2="0087B2C8" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="0087B2C8" file="main_tx.c" linenr="32" column="29" str="IDLE" scope="043BB948" type="name" values="007A78F0" astParent="00806450" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="0087B308" file="main_tx.c" linenr="32" column="33" str=";" scope="043BB948"/>
+    <token id="0087B648" file="main_tx.c" linenr="33" column="10" str="char" scope="043BB948" type="name" isUnsigned="true"/>
+    <token id="0087B408" file="main_tx.c" linenr="33" column="15" str="blink_patterns" scope="043BB948" type="name" varId="3" variable="00806598" astParent="0087B188" valueType-type="char" valueType-sign="unsigned" valueType-pointer="1"/>
+    <token id="0087B188" file="main_tx.c" linenr="33" column="29" str="[" scope="043BB948" link="0087AF88" astParent="0087AF08" astOperand1="0087B408" astOperand2="00806190" valueType-type="char" valueType-sign="unsigned" valueType-pointer="1"/>
+    <token id="00806190" file="main_tx.c" linenr="33" column="0" str="6" scope="043BB948" type="number" isInt="True" values="007A7910" astParent="0087B188" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087AF88" file="main_tx.c" linenr="33" column="30" str="]" scope="043BB948" link="0087B188"/>
+    <token id="0087AF08" file="main_tx.c" linenr="33" column="32" str="=" scope="043BB948" type="op" isAssignmentOp="True" astOperand1="0087B188" astOperand2="0087B448" valueType-type="char" valueType-sign="unsigned" valueType-pointer="1"/>
+    <token id="0087B448" file="main_tx.c" linenr="33" column="34" str="{" scope="043BB948" link="0087AC88" astParent="0087AF08" astOperand1="0087B088"/>
+    <token id="0087B5C8" file="main_tx.c" linenr="34" column="5" str="0b11110000" scope="043BB948" type="number" isInt="True" values="007A7940" astParent="0087B348" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087B348" file="main_tx.c" linenr="34" column="15" str="," scope="043BB948" astParent="0087B488" astOperand1="0087B5C8" astOperand2="0087B048"/>
+    <token id="0087B048" file="main_tx.c" linenr="35" column="5" str="0b10000000" scope="043BB948" type="number" isInt="True" values="007A7980" astParent="0087B348" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087B488" file="main_tx.c" linenr="35" column="15" str="," scope="043BB948" astParent="0087B1C8" astOperand1="0087B348" astOperand2="0087B4C8"/>
+    <token id="0087B4C8" file="main_tx.c" linenr="36" column="5" str="0b10100000" scope="043BB948" type="number" isInt="True" values="007A7990" astParent="0087B488" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087B1C8" file="main_tx.c" linenr="36" column="15" str="," scope="043BB948" astParent="0087B0C8" astOperand1="0087B488" astOperand2="0087B248"/>
+    <token id="0087B248" file="main_tx.c" linenr="37" column="5" str="0b10101000" scope="043BB948" type="number" isInt="True" values="007A79A0" astParent="0087B1C8" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087B0C8" file="main_tx.c" linenr="37" column="15" str="," scope="043BB948" astParent="0087B088" astOperand1="0087B1C8" astOperand2="0087B608"/>
+    <token id="0087B608" file="main_tx.c" linenr="38" column="5" str="0b10101010" scope="043BB948" type="number" isInt="True" values="04537E00" astParent="0087B0C8" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087B088" file="main_tx.c" linenr="38" column="15" str="," scope="043BB948" astParent="0087B448" astOperand1="0087B0C8" astOperand2="0087A788"/>
+    <token id="0087A788" file="main_tx.c" linenr="39" column="5" str="0b11111111" scope="043BB948" type="number" isInt="True" values="04537C70" astParent="0087B088" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087AC88" file="main_tx.c" linenr="40" column="1" str="}" scope="043BB948" link="0087B448"/>
+    <token id="0087A6C8" file="main_tx.c" linenr="40" column="2" str=";" scope="043BB948"/>
+    <token id="0087AD08" file="main_tx.c" linenr="41" column="10" str="char" scope="043BB948" type="name" isUnsigned="true"/>
+    <token id="0087A748" file="main_tx.c" linenr="41" column="15" str="blink_frame" scope="043BB948" type="name" varId="4" variable="008065D8" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="0087AC48" file="main_tx.c" linenr="41" column="27" str=";" scope="043BB948"/>
+    <token id="008062D0" file="main_tx.c" linenr="41" column="15" str="blink_frame" scope="043BB948" type="name" varId="4" variable="008065D8" astParent="00806890" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00806890" file="main_tx.c" linenr="41" column="27" str="=" scope="043BB948" type="op" isAssignmentOp="True" astOperand1="008062D0" astOperand2="0087ACC8" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="0087ACC8" file="main_tx.c" linenr="41" column="29" str="0" scope="043BB948" type="number" isInt="True" values="04537C60" astParent="00806890" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087A808" file="main_tx.c" linenr="41" column="30" str=";" scope="043BB948"/>
+    <token id="0087A8C8" file="main_tx.c" linenr="43" column="1" str="void" scope="043BB948" type="name"/>
+    <token id="0087A888" file="main_tx.c" linenr="43" column="6" str="initialize_hw" scope="043BB948" type="name" function="00812620" astParent="0087AAC8"/>
+    <token id="0087AAC8" file="main_tx.c" linenr="43" column="19" str="(" scope="043BB948" link="0087A848" astOperand1="0087A888" valueType-type="void"/>
+    <token id="0087A848" file="main_tx.c" linenr="43" column="20" str=")" scope="043BB948" link="0087AAC8"/>
+    <token id="0087ABC8" file="main_tx.c" linenr="43" column="22" str="{" scope="0080BE40" link="04592960"/>
+    <token id="0087A908" file="main_tx.c" linenr="45" column="5" str="PORTB" scope="0080BE40" type="name" astParent="0087AD48"/>
+    <token id="0087AD48" file="main_tx.c" linenr="45" column="11" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="0087A908" astOperand2="0087AD88"/>
+    <token id="0087AD88" file="main_tx.c" linenr="45" column="13" str="0xF7" scope="0080BE40" type="number" isInt="True" values="04537D50" astParent="0087AD48" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087ADC8" file="main_tx.c" linenr="45" column="17" str=";" scope="0080BE40"/>
+    <token id="0087A948" file="main_tx.c" linenr="46" column="5" str="TRISB" scope="0080BE40" type="name" astParent="0087A708"/>
+    <token id="0087A708" file="main_tx.c" linenr="46" column="11" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="0087A948" astOperand2="0087A9C8"/>
+    <token id="0087A9C8" file="main_tx.c" linenr="46" column="13" str="0xF1" scope="0080BE40" type="number" isInt="True" values="04537E20" astParent="0087A708" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087AE08" file="main_tx.c" linenr="46" column="17" str=";" scope="0080BE40"/>
+    <token id="0087AC08" file="main_tx.c" linenr="47" column="5" str="OPTION_REGbits" scope="0080BE40" type="name" astParent="0087AE48"/>
+    <token id="0087AE48" file="main_tx.c" linenr="47" column="19" str="." scope="0080BE40" astParent="0087AA08" astOperand1="0087AC08" astOperand2="0087A988"/>
+    <token id="0087A988" file="main_tx.c" linenr="47" column="20" str="nRBPU" scope="0080BE40" type="name" astParent="0087AE48"/>
+    <token id="0087AA08" file="main_tx.c" linenr="47" column="26" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="0087AE48" astOperand2="0087AE88"/>
+    <token id="0087AE88" file="main_tx.c" linenr="47" column="28" str="0" scope="0080BE40" type="number" isInt="True" values="04537DF0" astParent="0087AA08" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087AA48" file="main_tx.c" linenr="47" column="29" str=";" scope="0080BE40"/>
+    <token id="0087AB08" file="main_tx.c" linenr="48" column="5" str="INTCONbits" scope="0080BE40" type="name" astParent="0087AB48"/>
+    <token id="0087AB48" file="main_tx.c" linenr="48" column="15" str="." scope="0080BE40" astParent="0087D758" astOperand1="0087AB08" astOperand2="0087AB88"/>
+    <token id="0087AB88" file="main_tx.c" linenr="48" column="16" str="RBIF" scope="0080BE40" type="name" astParent="0087AB48"/>
+    <token id="0087D758" file="main_tx.c" linenr="48" column="21" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="0087AB48" astOperand2="0087DB98"/>
+    <token id="0087DB98" file="main_tx.c" linenr="48" column="23" str="0" scope="0080BE40" type="number" isInt="True" values="04537C30" astParent="0087D758" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087DB58" file="main_tx.c" linenr="48" column="24" str=";" scope="0080BE40"/>
+    <token id="0087D818" file="main_tx.c" linenr="49" column="5" str="INTCONbits" scope="0080BE40" type="name" astParent="0087DE18"/>
+    <token id="0087DE18" file="main_tx.c" linenr="49" column="15" str="." scope="0080BE40" astParent="0087D7D8" astOperand1="0087D818" astOperand2="0087D718"/>
+    <token id="0087D718" file="main_tx.c" linenr="49" column="16" str="RBIE" scope="0080BE40" type="name" astParent="0087DE18"/>
+    <token id="0087D7D8" file="main_tx.c" linenr="49" column="21" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="0087DE18" astOperand2="0087DA98"/>
+    <token id="0087DA98" file="main_tx.c" linenr="49" column="23" str="1" scope="0080BE40" type="number" isInt="True" values="04537C80" astParent="0087D7D8" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087DD98" file="main_tx.c" linenr="49" column="24" str=";" scope="0080BE40"/>
+    <token id="0087D858" file="main_tx.c" linenr="52" column="5" str="RCSTAbits" scope="0080BE40" type="name" astParent="0087DD18"/>
+    <token id="0087DD18" file="main_tx.c" linenr="52" column="14" str="." scope="0080BE40" astParent="0087DA18" astOperand1="0087D858" astOperand2="0087D798"/>
+    <token id="0087D798" file="main_tx.c" linenr="52" column="15" str="SPEN" scope="0080BE40" type="name" astParent="0087DD18"/>
+    <token id="0087DA18" file="main_tx.c" linenr="52" column="20" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="0087DD18" astOperand2="0087D898"/>
+    <token id="0087D898" file="main_tx.c" linenr="52" column="22" str="0" scope="0080BE40" type="number" isInt="True" values="04537D30" astParent="0087DA18" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087D8D8" file="main_tx.c" linenr="52" column="23" str=";" scope="0080BE40"/>
+    <token id="0087D918" file="main_tx.c" linenr="53" column="5" str="TXSTAbits" scope="0080BE40" type="name" astParent="0087D9D8"/>
+    <token id="0087D9D8" file="main_tx.c" linenr="53" column="14" str="." scope="0080BE40" astParent="0087D958" astOperand1="0087D918" astOperand2="0087DDD8"/>
+    <token id="0087DDD8" file="main_tx.c" linenr="53" column="15" str="SYNC" scope="0080BE40" type="name" astParent="0087D9D8"/>
+    <token id="0087D958" file="main_tx.c" linenr="53" column="20" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="0087D9D8" astOperand2="0087D998"/>
+    <token id="0087D998" file="main_tx.c" linenr="53" column="22" str="0" scope="0080BE40" type="number" isInt="True" values="04537CD0" astParent="0087D958" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087DA58" file="main_tx.c" linenr="53" column="23" str=";" scope="0080BE40"/>
+    <token id="0087D6D8" file="main_tx.c" linenr="54" column="5" str="TXSTAbits" scope="0080BE40" type="name" astParent="0087DD58"/>
+    <token id="0087DD58" file="main_tx.c" linenr="54" column="14" str="." scope="0080BE40" astParent="0087DAD8" astOperand1="0087D6D8" astOperand2="0087DE58"/>
+    <token id="0087DE58" file="main_tx.c" linenr="54" column="15" str="BRGH" scope="0080BE40" type="name" astParent="0087DD58"/>
+    <token id="0087DAD8" file="main_tx.c" linenr="54" column="20" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="0087DD58" astOperand2="0087DB18"/>
+    <token id="0087DB18" file="main_tx.c" linenr="54" column="22" str="0" scope="0080BE40" type="number" isInt="True" values="04537CC0" astParent="0087DAD8" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087DE98" file="main_tx.c" linenr="54" column="23" str=";" scope="0080BE40"/>
+    <token id="0087DBD8" file="main_tx.c" linenr="55" column="5" str="SPBRG" scope="0080BE40" type="name" astParent="0087DC18"/>
+    <token id="0087DC18" file="main_tx.c" linenr="55" column="11" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="0087DBD8" astOperand2="0087DC58"/>
+    <token id="0087DC58" file="main_tx.c" linenr="55" column="13" str="0x33" scope="0080BE40" type="number" isInt="True" values="04537DA0" astParent="0087DC18" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087DC98" file="main_tx.c" linenr="55" column="17" str=";" scope="0080BE40"/>
+    <token id="0087DCD8" file="main_tx.c" linenr="56" column="5" str="TXSTAbits" scope="0080BE40" type="name" astParent="0087E118"/>
+    <token id="0087E118" file="main_tx.c" linenr="56" column="14" str="." scope="0080BE40" astParent="0087E298" astOperand1="0087DCD8" astOperand2="0087E2D8"/>
+    <token id="0087E2D8" file="main_tx.c" linenr="56" column="15" str="TXEN" scope="0080BE40" type="name" astParent="0087E118"/>
+    <token id="0087E298" file="main_tx.c" linenr="56" column="20" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="0087E118" astOperand2="0087DF58"/>
+    <token id="0087DF58" file="main_tx.c" linenr="56" column="22" str="0" scope="0080BE40" type="number" isInt="True" values="04537CE0" astParent="0087E298" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087E158" file="main_tx.c" linenr="56" column="23" str=";" scope="0080BE40"/>
+    <token id="0087E198" file="main_tx.c" linenr="59" column="5" str="TMR1H" scope="0080BE40" type="name" astParent="0087E5D8"/>
+    <token id="0087E5D8" file="main_tx.c" linenr="59" column="11" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="0087E198" astOperand2="0087E658"/>
+    <token id="0087E658" file="main_tx.c" linenr="59" column="13" str="0" scope="0080BE40" type="number" isInt="True" values="04537D80" astParent="0087E5D8" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087E258" file="main_tx.c" linenr="59" column="14" str=";" scope="0080BE40"/>
+    <token id="0087E418" file="main_tx.c" linenr="60" column="5" str="TMR1L" scope="0080BE40" type="name" astParent="0087E458"/>
+    <token id="0087E458" file="main_tx.c" linenr="60" column="11" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="0087E418" astOperand2="0087E318"/>
+    <token id="0087E318" file="main_tx.c" linenr="60" column="13" str="0" scope="0080BE40" type="number" isInt="True" values="04537C50" astParent="0087E458" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087E358" file="main_tx.c" linenr="60" column="14" str=";" scope="0080BE40"/>
+    <token id="0087E498" file="main_tx.c" linenr="61" column="5" str="T1CONbits" scope="0080BE40" type="name" astParent="0087E398"/>
+    <token id="0087E398" file="main_tx.c" linenr="61" column="14" str="." scope="0080BE40" astParent="0087DED8" astOperand1="0087E498" astOperand2="0087E1D8"/>
+    <token id="0087E1D8" file="main_tx.c" linenr="61" column="15" str="T1CKPS0" scope="0080BE40" type="name" astParent="0087E398"/>
+    <token id="0087DED8" file="main_tx.c" linenr="61" column="23" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="0087E398" astOperand2="0087E0D8"/>
+    <token id="0087E0D8" file="main_tx.c" linenr="61" column="25" str="1" scope="0080BE40" type="number" isInt="True" values="04537D40" astParent="0087DED8" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087DFD8" file="main_tx.c" linenr="61" column="26" str=";" scope="0080BE40"/>
+    <token id="0087E3D8" file="main_tx.c" linenr="62" column="5" str="T1CONbits" scope="0080BE40" type="name" astParent="0087E4D8"/>
+    <token id="0087E4D8" file="main_tx.c" linenr="62" column="14" str="." scope="0080BE40" astParent="0087E518" astOperand1="0087E3D8" astOperand2="0087E218"/>
+    <token id="0087E218" file="main_tx.c" linenr="62" column="15" str="T1CKPS1" scope="0080BE40" type="name" astParent="0087E4D8"/>
+    <token id="0087E518" file="main_tx.c" linenr="62" column="23" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="0087E4D8" astOperand2="0087DF18"/>
+    <token id="0087DF18" file="main_tx.c" linenr="62" column="25" str="0" scope="0080BE40" type="number" isInt="True" values="04537E10" astParent="0087E518" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087E598" file="main_tx.c" linenr="62" column="26" str=";" scope="0080BE40"/>
+    <token id="0087E558" file="main_tx.c" linenr="63" column="5" str="T1CONbits" scope="0080BE40" type="name" astParent="0087E618"/>
+    <token id="0087E618" file="main_tx.c" linenr="63" column="14" str="." scope="0080BE40" astParent="0087E018" astOperand1="0087E558" astOperand2="0087DF98"/>
+    <token id="0087DF98" file="main_tx.c" linenr="63" column="15" str="T1OSCEN" scope="0080BE40" type="name" astParent="0087E618"/>
+    <token id="0087E018" file="main_tx.c" linenr="63" column="23" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="0087E618" astOperand2="0087E058"/>
+    <token id="0087E058" file="main_tx.c" linenr="63" column="25" str="0" scope="0080BE40" type="number" isInt="True" values="04537D60" astParent="0087E018" valueType-type="int" valueType-sign="signed"/>
+    <token id="0087E098" file="main_tx.c" linenr="63" column="26" str=";" scope="0080BE40"/>
+    <token id="045934E0" file="main_tx.c" linenr="64" column="5" str="T1CONbits" scope="0080BE40" type="name" astParent="045930A0"/>
+    <token id="045930A0" file="main_tx.c" linenr="64" column="14" str="." scope="0080BE40" astParent="045932A0" astOperand1="045934E0" astOperand2="04592DA0"/>
+    <token id="04592DA0" file="main_tx.c" linenr="64" column="15" str="TMR1CS" scope="0080BE40" type="name" astParent="045930A0"/>
+    <token id="045932A0" file="main_tx.c" linenr="64" column="22" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="045930A0" astOperand2="04593420"/>
+    <token id="04593420" file="main_tx.c" linenr="64" column="24" str="0" scope="0080BE40" type="number" isInt="True" values="04537C40" astParent="045932A0" valueType-type="int" valueType-sign="signed"/>
+    <token id="04592FA0" file="main_tx.c" linenr="64" column="25" str=";" scope="0080BE40"/>
+    <token id="04592DE0" file="main_tx.c" linenr="65" column="5" str="PIR1bits" scope="0080BE40" type="name" astParent="04593060"/>
+    <token id="04593060" file="main_tx.c" linenr="65" column="13" str="." scope="0080BE40" astParent="04593260" astOperand1="04592DE0" astOperand2="04593360"/>
+    <token id="04593360" file="main_tx.c" linenr="65" column="14" str="TMR1IF" scope="0080BE40" type="name" astParent="04593060"/>
+    <token id="04593260" file="main_tx.c" linenr="65" column="21" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="04593060" astOperand2="045933E0"/>
+    <token id="045933E0" file="main_tx.c" linenr="65" column="23" str="0" scope="0080BE40" type="number" isInt="True" values="04537DB0" astParent="04593260" valueType-type="int" valueType-sign="signed"/>
+    <token id="04592E20" file="main_tx.c" linenr="65" column="24" str=";" scope="0080BE40"/>
+    <token id="045930E0" file="main_tx.c" linenr="66" column="5" str="PIE1bits" scope="0080BE40" type="name" astParent="04593460"/>
+    <token id="04593460" file="main_tx.c" linenr="66" column="13" str="." scope="0080BE40" astParent="04592D60" astOperand1="045930E0" astOperand2="04593120"/>
+    <token id="04593120" file="main_tx.c" linenr="66" column="14" str="TMR1IE" scope="0080BE40" type="name" astParent="04593460"/>
+    <token id="04592D60" file="main_tx.c" linenr="66" column="21" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="04593460" astOperand2="04593160"/>
+    <token id="04593160" file="main_tx.c" linenr="66" column="23" str="1" scope="0080BE40" type="number" isInt="True" values="04537C90" astParent="04592D60" valueType-type="int" valueType-sign="signed"/>
+    <token id="04592EA0" file="main_tx.c" linenr="66" column="24" str=";" scope="0080BE40"/>
+    <token id="045932E0" file="main_tx.c" linenr="67" column="5" str="T1CONbits" scope="0080BE40" type="name" astParent="04593320"/>
+    <token id="04593320" file="main_tx.c" linenr="67" column="14" str="." scope="0080BE40" astParent="04592E60" astOperand1="045932E0" astOperand2="045934A0"/>
+    <token id="045934A0" file="main_tx.c" linenr="67" column="15" str="TMR1ON" scope="0080BE40" type="name" astParent="04593320"/>
+    <token id="04592E60" file="main_tx.c" linenr="67" column="22" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="04593320" astOperand2="045931A0"/>
+    <token id="045931A0" file="main_tx.c" linenr="67" column="24" str="1" scope="0080BE40" type="number" isInt="True" values="04537D90" astParent="04592E60" valueType-type="int" valueType-sign="signed"/>
+    <token id="045931E0" file="main_tx.c" linenr="67" column="25" str=";" scope="0080BE40"/>
+    <token id="04593220" file="main_tx.c" linenr="70" column="5" str="INTCONbits" scope="0080BE40" type="name" astParent="045933A0"/>
+    <token id="045933A0" file="main_tx.c" linenr="70" column="15" str="." scope="0080BE40" astParent="04592F20" astOperand1="04593220" astOperand2="04592EE0"/>
+    <token id="04592EE0" file="main_tx.c" linenr="70" column="16" str="GIE" scope="0080BE40" type="name" astParent="045933A0"/>
+    <token id="04592F20" file="main_tx.c" linenr="70" column="20" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="045933A0" astOperand2="04592F60"/>
+    <token id="04592F60" file="main_tx.c" linenr="70" column="22" str="1" scope="0080BE40" type="number" isInt="True" values="04537CA0" astParent="04592F20" valueType-type="int" valueType-sign="signed"/>
+    <token id="04592FE0" file="main_tx.c" linenr="70" column="23" str=";" scope="0080BE40"/>
+    <token id="04593020" file="main_tx.c" linenr="71" column="5" str="INTCONbits" scope="0080BE40" type="name" astParent="04592660"/>
+    <token id="04592660" file="main_tx.c" linenr="71" column="15" str="." scope="0080BE40" astParent="045926E0" astOperand1="04593020" astOperand2="045925E0"/>
+    <token id="045925E0" file="main_tx.c" linenr="71" column="16" str="PEIE" scope="0080BE40" type="name" astParent="04592660"/>
+    <token id="045926E0" file="main_tx.c" linenr="71" column="21" str="=" scope="0080BE40" type="op" isAssignmentOp="True" astOperand1="04592660" astOperand2="045928E0"/>
+    <token id="045928E0" file="main_tx.c" linenr="71" column="23" str="1" scope="0080BE40" type="number" isInt="True" values="04537CB0" astParent="045926E0" valueType-type="int" valueType-sign="signed"/>
+    <token id="04592A60" file="main_tx.c" linenr="71" column="24" str=";" scope="0080BE40"/>
+    <token id="04592960" file="main_tx.c" linenr="72" column="1" str="}" scope="0080BE40" link="0087ABC8"/>
+    <token id="04592720" file="main_tx.c" linenr="74" column="10" str="char" scope="043BB948" type="name" isUnsigned="true"/>
+    <token id="04592560" file="main_tx.c" linenr="74" column="15" str="handle_port_b_change" scope="043BB948" type="name" function="00812C50" astParent="045927E0"/>
+    <token id="045927E0" file="main_tx.c" linenr="74" column="35" str="(" scope="043BB948" link="045926A0" astOperand1="04592560" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="045926A0" file="main_tx.c" linenr="74" column="36" str=")" scope="043BB948" link="045927E0"/>
+    <token id="04592920" file="main_tx.c" linenr="74" column="38" str="{" scope="0080BED8" link="00802470"/>
+    <token id="04592620" file="main_tx.c" linenr="75" column="5" str="blink_frame" scope="0080BED8" type="name" varId="4" variable="008065D8" astParent="045929A0" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="045929A0" file="main_tx.c" linenr="75" column="17" str="=" scope="0080BED8" type="op" isAssignmentOp="True" astOperand1="04592620" astOperand2="04592820" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="04592820" file="main_tx.c" linenr="75" column="19" str="0" scope="0080BED8" type="number" isInt="True" values="04537CF0" astParent="045929A0" valueType-type="int" valueType-sign="signed"/>
+    <token id="04592B60" file="main_tx.c" linenr="75" column="20" str=";" scope="0080BED8"/>
+    <token id="04592760" file="main_tx.c" linenr="77" column="5" str="if" scope="0080BED8" type="name" astParent="04592CA0"/>
+    <token id="04592CA0" file="main_tx.c" linenr="77" column="8" str="(" scope="0080BED8" link="04592C20" astOperand1="04592760" astOperand2="04592D20"/>
+    <token id="04592D20" file="main_tx.c" linenr="77" column="9" str="!" scope="0080BED8" type="op" isLogicalOp="True" astParent="04592CA0" astOperand1="04592CE0" valueType-type="bool"/>
+    <token id="045928A0" file="main_tx.c" linenr="77" column="10" str="PORTBbits" scope="0080BED8" type="name" astParent="04592CE0"/>
+    <token id="04592CE0" file="main_tx.c" linenr="77" column="19" str="." scope="0080BED8" astParent="04592D20" astOperand1="045928A0" astOperand2="04592AE0"/>
+    <token id="04592AE0" file="main_tx.c" linenr="77" column="20" str="RB7" scope="0080BED8" type="name" astParent="04592CE0"/>
+    <token id="04592C20" file="main_tx.c" linenr="77" column="23" str=")" scope="0080BED8" link="04592CA0"/>
+    <token id="045925A0" file="main_tx.c" linenr="77" column="25" str="{" scope="0080BF70" link="04592A20"/>
+    <token id="045927A0" file="main_tx.c" linenr="78" column="9" str="return" scope="0080BF70" type="name" astOperand1="045929E0" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="045929E0" file="main_tx.c" linenr="78" column="16" str="ZONE_1" scope="0080BF70" type="name" values="04537D00" astParent="045927A0" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="04592860" file="main_tx.c" linenr="78" column="22" str=";" scope="0080BF70"/>
+    <token id="04592A20" file="main_tx.c" linenr="79" column="5" str="}" scope="0080BF70" link="045925A0"/>
+    <token id="04592AA0" file="main_tx.c" linenr="81" column="5" str="if" scope="0080BED8" type="name" astParent="04592B20"/>
+    <token id="04592B20" file="main_tx.c" linenr="81" column="8" str="(" scope="0080BED8" link="00802970" astOperand1="04592AA0" astOperand2="04592BA0"/>
+    <token id="04592BA0" file="main_tx.c" linenr="81" column="9" str="!" scope="0080BED8" type="op" isLogicalOp="True" astParent="04592B20" astOperand1="00802A30" valueType-type="bool"/>
+    <token id="04592C60" file="main_tx.c" linenr="81" column="10" str="PORTBbits" scope="0080BED8" type="name" astParent="00802A30"/>
+    <token id="00802A30" file="main_tx.c" linenr="81" column="19" str="." scope="0080BED8" astParent="04592BA0" astOperand1="04592C60" astOperand2="00802A70"/>
+    <token id="00802A70" file="main_tx.c" linenr="81" column="20" str="RB6" scope="0080BED8" type="name" astParent="00802A30"/>
+    <token id="00802970" file="main_tx.c" linenr="81" column="23" str=")" scope="0080BED8" link="04592B20"/>
+    <token id="00802FB0" file="main_tx.c" linenr="81" column="25" str="{" scope="0080C008" link="00802E70"/>
+    <token id="00802CF0" file="main_tx.c" linenr="82" column="9" str="return" scope="0080C008" type="name" astOperand1="00802CB0" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00802CB0" file="main_tx.c" linenr="82" column="16" str="ZONE_2" scope="0080C008" type="name" values="04537D10" astParent="00802CF0" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="008029F0" file="main_tx.c" linenr="82" column="22" str=";" scope="0080C008"/>
+    <token id="00802E70" file="main_tx.c" linenr="83" column="5" str="}" scope="0080C008" link="00802FB0"/>
+    <token id="00802E30" file="main_tx.c" linenr="85" column="5" str="if" scope="0080BED8" type="name" astParent="00802D70"/>
+    <token id="00802D70" file="main_tx.c" linenr="85" column="8" str="(" scope="0080BED8" link="00802F70" astOperand1="00802E30" astOperand2="00802AB0"/>
+    <token id="00802AB0" file="main_tx.c" linenr="85" column="9" str="!" scope="0080BED8" type="op" isLogicalOp="True" astParent="00802D70" astOperand1="00802BF0" valueType-type="bool"/>
+    <token id="00802930" file="main_tx.c" linenr="85" column="10" str="PORTBbits" scope="0080BED8" type="name" astParent="00802BF0"/>
+    <token id="00802BF0" file="main_tx.c" linenr="85" column="19" str="." scope="0080BED8" astParent="00802AB0" astOperand1="00802930" astOperand2="00802EB0"/>
+    <token id="00802EB0" file="main_tx.c" linenr="85" column="20" str="RB5" scope="0080BED8" type="name" astParent="00802BF0"/>
+    <token id="00802F70" file="main_tx.c" linenr="85" column="23" str=")" scope="0080BED8" link="00802D70"/>
+    <token id="00802FF0" file="main_tx.c" linenr="85" column="25" str="{" scope="044A3C18" link="00802AF0"/>
+    <token id="00802C30" file="main_tx.c" linenr="86" column="9" str="return" scope="044A3C18" type="name" astOperand1="00802C70" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00802C70" file="main_tx.c" linenr="86" column="16" str="ZONE_3" scope="044A3C18" type="name" values="04537D20" astParent="00802C30" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="00803070" file="main_tx.c" linenr="86" column="22" str=";" scope="044A3C18"/>
+    <token id="00802AF0" file="main_tx.c" linenr="87" column="5" str="}" scope="044A3C18" link="00802FF0"/>
+    <token id="00802F30" file="main_tx.c" linenr="89" column="5" str="if" scope="0080BED8" type="name" astParent="00802D30"/>
+    <token id="00802D30" file="main_tx.c" linenr="89" column="8" str="(" scope="0080BED8" link="00802B30" astOperand1="00802F30" astOperand2="00802DB0"/>
+    <token id="00802DB0" file="main_tx.c" linenr="89" column="9" str="!" scope="0080BED8" type="op" isLogicalOp="True" astParent="00802D30" astOperand1="00802BB0" valueType-type="bool"/>
+    <token id="008029B0" file="main_tx.c" linenr="89" column="10" str="PORTBbits" scope="0080BED8" type="name" astParent="00802BB0"/>
+    <token id="00802BB0" file="main_tx.c" linenr="89" column="19" str="." scope="0080BED8" astParent="00802DB0" astOperand1="008029B0" astOperand2="00802DF0"/>
+    <token id="00802DF0" file="main_tx.c" linenr="89" column="20" str="RB4" scope="0080BED8" type="name" astParent="00802BB0"/>
+    <token id="00802B30" file="main_tx.c" linenr="89" column="23" str=")" scope="0080BED8" link="00802D30"/>
+    <token id="00803030" file="main_tx.c" linenr="89" column="25" str="{" scope="044A3CB0" link="00802830"/>
+    <token id="00802EF0" file="main_tx.c" linenr="90" column="9" str="return" scope="044A3CB0" type="name" astOperand1="008030B0" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="008030B0" file="main_tx.c" linenr="90" column="16" str="ZONE_4" scope="044A3CB0" type="name" values="04537DC0" astParent="00802EF0" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="00802B70" file="main_tx.c" linenr="90" column="22" str=";" scope="044A3CB0"/>
+    <token id="00802830" file="main_tx.c" linenr="91" column="5" str="}" scope="044A3CB0" link="00803030"/>
+    <token id="008028F0" file="main_tx.c" linenr="93" column="5" str="return" scope="0080BED8" type="name" astOperand1="008027B0" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="008027B0" file="main_tx.c" linenr="93" column="12" str="IDLE" scope="0080BED8" type="name" values="04537D70" astParent="008028F0" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="00802170" file="main_tx.c" linenr="93" column="16" str=";" scope="0080BED8"/>
+    <token id="00802470" file="main_tx.c" linenr="94" column="1" str="}" scope="0080BED8" link="04592920"/>
+    <token id="00802770" file="main_tx.c" linenr="96" column="1" str="void" scope="043BB948" type="name"/>
+    <token id="008023F0" file="main_tx.c" linenr="96" column="6" str="handle_timer_1_overflow" scope="043BB948" type="name" function="008130C8" astParent="00802530"/>
+    <token id="00802530" file="main_tx.c" linenr="96" column="29" str="(" scope="043BB948" link="00802570" astOperand1="008023F0" valueType-type="void"/>
+    <token id="00802570" file="main_tx.c" linenr="96" column="30" str=")" scope="043BB948" link="00802530"/>
+    <token id="008028B0" file="main_tx.c" linenr="96" column="32" str="{" scope="044A3D48" link="00803F38"/>
+    <token id="00802230" file="main_tx.c" linenr="97" column="5" str="if" scope="044A3D48" type="name" astParent="008025F0"/>
+    <token id="008025F0" file="main_tx.c" linenr="97" column="8" str="(" scope="044A3D48" link="008024B0" astOperand1="00802230" astOperand2="008021B0"/>
+    <token id="00802370" file="main_tx.c" linenr="97" column="9" str="blink_frame" scope="044A3D48" type="name" varId="4" variable="008065D8" astParent="008021B0" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="008021B0" file="main_tx.c" linenr="97" column="21" str="&lt;" scope="044A3D48" type="op" isComparisonOp="True" astParent="008025F0" astOperand1="00802370" astOperand2="00802130" valueType-type="bool"/>
+    <token id="00802130" file="main_tx.c" linenr="97" column="23" str="8" scope="044A3D48" type="number" isInt="True" values="04537DD0" astParent="008021B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="008024B0" file="main_tx.c" linenr="97" column="24" str=")" scope="044A3D48" link="008025F0"/>
+    <token id="008026F0" file="main_tx.c" linenr="97" column="26" str="{" scope="044A3DE0" link="008037F8"/>
+    <token id="008023B0" file="main_tx.c" linenr="98" column="9" str="PORTBbits" scope="044A3DE0" type="name" astParent="008021F0"/>
+    <token id="008021F0" file="main_tx.c" linenr="98" column="18" str="." scope="044A3DE0" astParent="008025B0" astOperand1="008023B0" astOperand2="008024F0"/>
+    <token id="008024F0" file="main_tx.c" linenr="98" column="19" str="RB3" scope="044A3DE0" type="name" astParent="008021F0"/>
+    <token id="008025B0" file="main_tx.c" linenr="98" column="23" str="=" scope="044A3DE0" type="op" isAssignmentOp="True" astOperand1="008021F0" astOperand2="00803778"/>
+    <token id="00802270" file="main_tx.c" linenr="98" column="25" str="(" scope="044A3DE0" link="00803878"/>
+    <token id="008022B0" file="main_tx.c" linenr="98" column="26" str="blink_patterns" scope="044A3DE0" type="name" varId="3" variable="00806598" astParent="008022F0" valueType-type="char" valueType-sign="unsigned" valueType-pointer="1"/>
+    <token id="008022F0" file="main_tx.c" linenr="98" column="40" str="[" scope="044A3DE0" link="00802430" astParent="00802630" astOperand1="008022B0" astOperand2="00802330" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00802330" file="main_tx.c" linenr="98" column="41" str="state" scope="044A3DE0" type="name" varId="1" variable="008064D8" astParent="008022F0" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00802430" file="main_tx.c" linenr="98" column="46" str="]" scope="044A3DE0" link="008022F0"/>
+    <token id="00802630" file="main_tx.c" linenr="98" column="48" str="&amp;" scope="044A3DE0" type="op" astParent="00803778" astOperand1="008022F0" astOperand2="008026B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00802670" file="main_tx.c" linenr="98" column="50" str="(" scope="044A3DE0" link="00802870"/>
+    <token id="00802730" file="main_tx.c" linenr="98" column="51" str="1" scope="044A3DE0" type="number" isInt="True" values="04537DE0" astParent="008026B0" valueType-type="int" valueType-sign="signed"/>
+    <token id="008026B0" file="main_tx.c" linenr="98" column="53" str="&lt;&lt;" scope="044A3DE0" type="op" isArithmeticalOp="True" values="04537E90" astParent="00802630" astOperand1="00802730" astOperand2="008027F0" valueType-type="int" valueType-sign="signed"/>
+    <token id="008027F0" file="main_tx.c" linenr="98" column="56" str="blink_frame" scope="044A3DE0" type="name" varId="4" variable="008065D8" values="04537F10" astParent="008026B0" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00802870" file="main_tx.c" linenr="98" column="67" str=")" scope="044A3DE0" link="00802670"/>
+    <token id="00803878" file="main_tx.c" linenr="98" column="68" str=")" scope="044A3DE0" link="00802270"/>
+    <token id="00803778" file="main_tx.c" linenr="98" column="70" str="?" scope="044A3DE0" astParent="008025B0" astOperand1="00802630" astOperand2="008037B8" valueType-type="int" valueType-sign="signed"/>
+    <token id="008031B8" file="main_tx.c" linenr="98" column="72" str="1" scope="044A3DE0" type="number" isInt="True" values="04537F40" astParent="008037B8" valueType-type="int" valueType-sign="signed"/>
+    <token id="008037B8" file="main_tx.c" linenr="98" column="74" str=":" scope="044A3DE0" values="04537EA0" astParent="00803778" astOperand1="008031B8" astOperand2="008036F8" valueType-type="int" valueType-sign="signed"/>
+    <token id="008036F8" file="main_tx.c" linenr="98" column="76" str="0" scope="044A3DE0" type="number" isInt="True" values="04537E70" astParent="008037B8" valueType-type="int" valueType-sign="signed"/>
+    <token id="008035B8" file="main_tx.c" linenr="98" column="77" str=";" scope="044A3DE0"/>
+    <token id="008037F8" file="main_tx.c" linenr="99" column="5" str="}" scope="044A3DE0" link="008026F0"/>
+    <token id="00803538" file="main_tx.c" linenr="99" column="7" str="else" scope="044A3D48" type="name"/>
+    <token id="00806710" file="main_tx.c" linenr="99" column="0" str="{" scope="044A3E78" link="00806910"/>
+    <token id="00803378" file="main_tx.c" linenr="99" column="12" str="if" scope="044A3E78" type="name" astParent="008033B8"/>
+    <token id="008033B8" file="main_tx.c" linenr="99" column="15" str="(" scope="044A3E78" link="008038F8" astOperand1="00803378" astOperand2="00803438"/>
+    <token id="008035F8" file="main_tx.c" linenr="99" column="16" str="blink_frame" scope="044A3E78" type="name" varId="4" variable="008065D8" values="04537F50" astParent="00803638" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00803638" file="main_tx.c" linenr="99" column="28" str="&lt;" scope="044A3E78" type="op" isComparisonOp="True" values="04537FE0" astParent="00803438" astOperand1="008035F8" astOperand2="00803738" valueType-type="bool"/>
+    <token id="00803738" file="main_tx.c" linenr="99" column="30" str="16" scope="044A3E78" type="number" isInt="True" values="04537FC0" astParent="00803638" valueType-type="int" valueType-sign="signed"/>
+    <token id="00803438" file="main_tx.c" linenr="99" column="33" str="&amp;&amp;" scope="044A3E78" type="op" isLogicalOp="True" astParent="008033B8" astOperand1="00803638" astOperand2="00803478" valueType-type="bool"/>
+    <token id="00803678" file="main_tx.c" linenr="99" column="36" str="state" scope="044A3E78" type="name" varId="1" variable="008064D8" astParent="00803478" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00803478" file="main_tx.c" linenr="99" column="42" str="!=" scope="044A3E78" type="op" isComparisonOp="True" astParent="00803438" astOperand1="00803678" astOperand2="008036B8" valueType-type="bool"/>
+    <token id="008036B8" file="main_tx.c" linenr="99" column="45" str="PAIRING" scope="044A3E78" type="name" values="04537EB0" astParent="00803478" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="008038F8" file="main_tx.c" linenr="99" column="52" str=")" scope="044A3E78" link="008033B8"/>
+    <token id="00803278" file="main_tx.c" linenr="99" column="54" str="{" scope="00807EF8" link="008034B8"/>
+    <token id="00803138" file="main_tx.c" linenr="100" column="9" str="PORTBbits" scope="00807EF8" type="name" astParent="00803838"/>
+    <token id="00803838" file="main_tx.c" linenr="100" column="18" str="." scope="00807EF8" astParent="00803178" astOperand1="00803138" astOperand2="008034F8"/>
+    <token id="008034F8" file="main_tx.c" linenr="100" column="19" str="RB3" scope="00807EF8" type="name" astParent="00803838"/>
+    <token id="00803178" file="main_tx.c" linenr="100" column="23" str="=" scope="00807EF8" type="op" isAssignmentOp="True" astOperand1="00803838" astOperand2="008031F8"/>
+    <token id="008031F8" file="main_tx.c" linenr="100" column="25" str="0" scope="00807EF8" type="number" isInt="True" values="04537F00" astParent="00803178" valueType-type="int" valueType-sign="signed"/>
+    <token id="00803578" file="main_tx.c" linenr="100" column="26" str=";" scope="00807EF8"/>
+    <token id="008034B8" file="main_tx.c" linenr="101" column="5" str="}" scope="00807EF8" link="00803278"/>
+    <token id="00803238" file="main_tx.c" linenr="101" column="7" str="else" scope="044A3E78" type="name"/>
+    <token id="008038B8" file="main_tx.c" linenr="101" column="12" str="{" scope="00807A38" link="00803A38"/>
+    <token id="008032B8" file="main_tx.c" linenr="102" column="9" str="blink_frame" scope="00807A38" type="name" varId="4" variable="008065D8" astParent="008032F8" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="008032F8" file="main_tx.c" linenr="102" column="21" str="=" scope="00807A38" type="op" isAssignmentOp="True" astOperand1="008032B8" astOperand2="00803338" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00803338" file="main_tx.c" linenr="102" column="23" str="0" scope="00807A38" type="number" isInt="True" values="04537EE0" astParent="008032F8" valueType-type="int" valueType-sign="signed"/>
+    <token id="008033F8" file="main_tx.c" linenr="102" column="24" str=";" scope="00807A38"/>
+    <token id="00803A38" file="main_tx.c" linenr="103" column="5" str="}" scope="00807A38" link="008038B8"/>
+    <token id="00806910" file="main_tx.c" linenr="103" column="0" str="}" scope="044A3E78" link="00806710"/>
+    <token id="00803CF8" file="main_tx.c" linenr="105" column="5" str="blink_frame" scope="044A3D48" type="name" varId="4" variable="008065D8" astParent="00803FB8" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00803FB8" file="main_tx.c" linenr="105" column="16" str="++" scope="044A3D48" type="op" astOperand1="00803CF8" valueType-type="int" valueType-sign="signed"/>
+    <token id="00803A78" file="main_tx.c" linenr="105" column="18" str=";" scope="044A3D48"/>
+    <token id="00803F38" file="main_tx.c" linenr="117" column="1" str="}" scope="044A3D48" link="008028B0"/>
+    <token id="00803978" file="main_tx.c" linenr="119" column="1" str="void" scope="043BB948" type="name"/>
+    <token id="00803C78" file="main_tx.c" linenr="119" column="6" str="__interrupt" scope="043BB948" type="name" astParent="00803AB8"/>
+    <token id="00803AB8" file="main_tx.c" linenr="119" column="17" str="(" scope="043BB948" link="00803AF8" astOperand1="00803C78"/>
+    <token id="00803AF8" file="main_tx.c" linenr="119" column="18" str=")" scope="043BB948" link="00803AB8"/>
+    <token id="00803CB8" file="main_tx.c" linenr="119" column="20" str="interrupt_handler" scope="043BB948" type="name" astParent="00803FF8"/>
+    <token id="00803FF8" file="main_tx.c" linenr="119" column="37" str="(" scope="043BB948" link="00803BB8" astOperand1="00803CB8"/>
+    <token id="00803BB8" file="main_tx.c" linenr="119" column="42" str=")" scope="043BB948" link="00803FF8"/>
+    <token id="00803B38" file="main_tx.c" linenr="119" column="44" str="{" scope="043BB948" link="00804E80"/>
+    <token id="00803938" file="main_tx.c" linenr="120" column="5" str="if" scope="043BB948" type="name" astParent="00804038"/>
+    <token id="00804038" file="main_tx.c" linenr="120" column="8" str="(" scope="043BB948" link="00804078" astOperand1="00803938" astOperand2="00803BF8"/>
+    <token id="008040B8" file="main_tx.c" linenr="120" column="9" str="INTCONbits" scope="043BB948" type="name" astParent="00803BF8"/>
+    <token id="00803BF8" file="main_tx.c" linenr="120" column="19" str="." scope="043BB948" astParent="00804038" astOperand1="008040B8" astOperand2="00803D38"/>
+    <token id="00803D38" file="main_tx.c" linenr="120" column="20" str="RBIF" scope="043BB948" type="name" astParent="00803BF8"/>
+    <token id="00804078" file="main_tx.c" linenr="120" column="24" str=")" scope="043BB948" link="00804038"/>
+    <token id="008039B8" file="main_tx.c" linenr="120" column="26" str="{" scope="043BB948" link="00804140"/>
+    <token id="00803D78" file="main_tx.c" linenr="121" column="9" str="if" scope="043BB948" type="name" astParent="00803DB8"/>
+    <token id="00803DB8" file="main_tx.c" linenr="121" column="12" str="(" scope="043BB948" link="00803F78" astOperand1="00803D78" astOperand2="00803C38"/>
+    <token id="00803DF8" file="main_tx.c" linenr="121" column="13" str="state" scope="043BB948" type="name" varId="1" variable="008064D8" astParent="00803C38" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00803C38" file="main_tx.c" linenr="121" column="19" str="==" scope="043BB948" type="op" isComparisonOp="True" astParent="00803DB8" astOperand1="00803DF8" astOperand2="00803E38" valueType-type="bool"/>
+    <token id="00803E38" file="main_tx.c" linenr="121" column="22" str="PAIRING" scope="043BB948" type="name" values="04537EC0" astParent="00803C38" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="00803F78" file="main_tx.c" linenr="121" column="29" str=")" scope="043BB948" link="00803DB8"/>
+    <token id="008039F8" file="main_tx.c" linenr="121" column="31" str="{" scope="043BB948" link="00804180"/>
+    <token id="00803E78" file="main_tx.c" linenr="122" column="13" str="saved_state" scope="043BB948" type="name" varId="2" variable="00806558" astParent="00803EB8" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00803EB8" file="main_tx.c" linenr="122" column="25" str="=" scope="043BB948" type="op" isAssignmentOp="True" astOperand1="00803E78" astOperand2="00804640" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00803EF8" file="main_tx.c" linenr="122" column="27" str="handle_port_b_change" scope="043BB948" type="name" function="00812C50" astParent="00804640"/>
+    <token id="00804640" file="main_tx.c" linenr="122" column="47" str="(" scope="043BB948" link="00804600" astParent="00803EB8" astOperand1="00803EF8" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00804600" file="main_tx.c" linenr="122" column="48" str=")" scope="043BB948" link="00804640"/>
+    <token id="00804240" file="main_tx.c" linenr="122" column="49" str=";" scope="043BB948"/>
+    <token id="00804180" file="main_tx.c" linenr="123" column="9" str="}" scope="043BB948" link="008039F8"/>
+    <token id="00804680" file="main_tx.c" linenr="123" column="11" str="else" scope="043BB948" type="name"/>
+    <token id="00804340" file="main_tx.c" linenr="123" column="16" str="{" scope="043BB948" link="00804700"/>
+    <token id="00804280" file="main_tx.c" linenr="124" column="13" str="state" scope="043BB948" type="name" varId="1" variable="008064D8" astParent="008041C0" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="008041C0" file="main_tx.c" linenr="124" column="19" str="=" scope="043BB948" type="op" isAssignmentOp="True" astOperand1="00804280" astOperand2="008046C0" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00804200" file="main_tx.c" linenr="124" column="21" str="handle_port_b_change" scope="043BB948" type="name" function="00812C50" astParent="008046C0"/>
+    <token id="008046C0" file="main_tx.c" linenr="124" column="41" str="(" scope="043BB948" link="008042C0" astParent="008041C0" astOperand1="00804200" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="008042C0" file="main_tx.c" linenr="124" column="42" str=")" scope="043BB948" link="008046C0"/>
+    <token id="00804300" file="main_tx.c" linenr="124" column="43" str=";" scope="043BB948"/>
+    <token id="00804700" file="main_tx.c" linenr="125" column="9" str="}" scope="043BB948" link="00804340"/>
+    <token id="00804440" file="main_tx.c" linenr="127" column="9" str="INTCONbits" scope="043BB948" type="name" astParent="00804900"/>
+    <token id="00804900" file="main_tx.c" linenr="127" column="19" str="." scope="043BB948" astParent="00804740" astOperand1="00804440" astOperand2="00804380"/>
+    <token id="00804380" file="main_tx.c" linenr="127" column="20" str="RBIF" scope="043BB948" type="name" astParent="00804900"/>
+    <token id="00804740" file="main_tx.c" linenr="127" column="25" str="=" scope="043BB948" type="op" isAssignmentOp="True" astOperand1="00804900" astOperand2="00804840"/>
+    <token id="00804840" file="main_tx.c" linenr="127" column="27" str="0" scope="043BB948" type="number" isInt="True" values="04537FB0" astParent="00804740" valueType-type="int" valueType-sign="signed"/>
+    <token id="00804780" file="main_tx.c" linenr="127" column="28" str=";" scope="043BB948"/>
+    <token id="00804140" file="main_tx.c" linenr="128" column="5" str="}" scope="043BB948" link="008039B8"/>
+    <token id="008047C0" file="main_tx.c" linenr="130" column="5" str="if" scope="043BB948" type="name" astParent="008043C0"/>
+    <token id="008043C0" file="main_tx.c" linenr="130" column="8" str="(" scope="043BB948" link="00804800" astOperand1="008047C0" astOperand2="00804400"/>
+    <token id="008044C0" file="main_tx.c" linenr="130" column="9" str="PIR1bits" scope="043BB948" type="name" astParent="00804400"/>
+    <token id="00804400" file="main_tx.c" linenr="130" column="17" str="." scope="043BB948" astParent="008043C0" astOperand1="008044C0" astOperand2="00804480"/>
+    <token id="00804480" file="main_tx.c" linenr="130" column="18" str="TMR1IF" scope="043BB948" type="name" astParent="00804400"/>
+    <token id="00804800" file="main_tx.c" linenr="130" column="24" str=")" scope="043BB948" link="008043C0"/>
+    <token id="00804500" file="main_tx.c" linenr="130" column="26" str="{" scope="043BB948" link="00805080"/>
+    <token id="00804880" file="main_tx.c" linenr="131" column="9" str="if" scope="043BB948" type="name" astParent="00804540"/>
+    <token id="00804540" file="main_tx.c" linenr="131" column="12" str="(" scope="043BB948" link="00804E00" astOperand1="00804880" astOperand2="008045C0"/>
+    <token id="00804580" file="main_tx.c" linenr="131" column="13" str="PIE1bits" scope="043BB948" type="name" astParent="008045C0"/>
+    <token id="008045C0" file="main_tx.c" linenr="131" column="21" str="." scope="043BB948" astParent="00804540" astOperand1="00804580" astOperand2="008048C0"/>
+    <token id="008048C0" file="main_tx.c" linenr="131" column="22" str="TMR1IE" scope="043BB948" type="name" astParent="008045C0"/>
+    <token id="00804E00" file="main_tx.c" linenr="131" column="28" str=")" scope="043BB948" link="00804540"/>
+    <token id="00804B00" file="main_tx.c" linenr="131" column="30" str="{" scope="043BB948" link="00804A80"/>
+    <token id="00804A40" file="main_tx.c" linenr="132" column="13" str="handle_timer_1_overflow" scope="043BB948" type="name" function="008130C8" astParent="00804D40"/>
+    <token id="00804D40" file="main_tx.c" linenr="132" column="36" str="(" scope="043BB948" link="00804940" astOperand1="00804A40" valueType-type="void"/>
+    <token id="00804940" file="main_tx.c" linenr="132" column="37" str=")" scope="043BB948" link="00804D40"/>
+    <token id="00804F00" file="main_tx.c" linenr="132" column="38" str=";" scope="043BB948"/>
+    <token id="00804A80" file="main_tx.c" linenr="133" column="9" str="}" scope="043BB948" link="00804B00"/>
+    <token id="00804AC0" file="main_tx.c" linenr="134" column="9" str="PIR1bits" scope="043BB948" type="name" astParent="00804E40"/>
+    <token id="00804E40" file="main_tx.c" linenr="134" column="17" str="." scope="043BB948" astParent="00804980" astOperand1="00804AC0" astOperand2="00804C80"/>
+    <token id="00804C80" file="main_tx.c" linenr="134" column="18" str="TMR1IF" scope="043BB948" type="name" astParent="00804E40"/>
+    <token id="00804980" file="main_tx.c" linenr="134" column="25" str="=" scope="043BB948" type="op" isAssignmentOp="True" astOperand1="00804E40" astOperand2="00804B40"/>
+    <token id="00804B40" file="main_tx.c" linenr="134" column="27" str="0" scope="043BB948" type="number" isInt="True" values="04537E50" astParent="00804980" valueType-type="int" valueType-sign="signed"/>
+    <token id="00804EC0" file="main_tx.c" linenr="134" column="28" str=";" scope="043BB948"/>
+    <token id="00805080" file="main_tx.c" linenr="135" column="5" str="}" scope="043BB948" link="00804500"/>
+    <token id="00804E80" file="main_tx.c" linenr="136" column="1" str="}" scope="043BB948" link="00803B38"/>
+    <token id="008049C0" file="main_tx.c" linenr="138" column="1" str="void" scope="043BB948" type="name"/>
+    <token id="00804F80" file="main_tx.c" linenr="138" column="6" str="main" scope="043BB948" type="name" function="008134E8" astParent="00804B80"/>
+    <token id="00804B80" file="main_tx.c" linenr="138" column="10" str="(" scope="043BB948" link="00804C00" astOperand1="00804F80" valueType-type="void"/>
+    <token id="00804C00" file="main_tx.c" linenr="138" column="15" str=")" scope="043BB948" link="00804B80"/>
+    <token id="00804CC0" file="main_tx.c" linenr="138" column="17" str="{" scope="00807870" link="00805B50"/>
+    <token id="00804F40" file="main_tx.c" linenr="139" column="5" str="initialize_hw" scope="00807870" type="name" function="00812620" astParent="00804C40"/>
+    <token id="00804C40" file="main_tx.c" linenr="139" column="18" str="(" scope="00807870" link="008050C0" astOperand1="00804F40" valueType-type="void"/>
+    <token id="008050C0" file="main_tx.c" linenr="139" column="19" str=")" scope="00807870" link="00804C40"/>
+    <token id="00804A00" file="main_tx.c" linenr="139" column="20" str=";" scope="00807870"/>
+    <token id="00804D00" file="main_tx.c" linenr="141" column="5" str="while" scope="00807870" type="name" astParent="00804BC0"/>
+    <token id="00804BC0" file="main_tx.c" linenr="141" column="11" str="(" scope="00807870" link="00804DC0" astOperand1="00804D00" astOperand2="00804FC0"/>
+    <token id="00804FC0" file="main_tx.c" linenr="141" column="12" str="1" scope="00807870" type="number" isInt="True" values="04537E60" astParent="00804BC0" valueType-type="int" valueType-sign="signed"/>
+    <token id="00804DC0" file="main_tx.c" linenr="141" column="13" str=")" scope="00807870" link="00804BC0"/>
+    <token id="00805000" file="main_tx.c" linenr="141" column="15" str="{" scope="008077D8" link="008060D0"/>
+    <token id="00805040" file="main_tx.c" linenr="142" column="9" str="if" scope="008077D8" type="name" astParent="00806010"/>
+    <token id="00806010" file="main_tx.c" linenr="142" column="12" str="(" scope="008077D8" link="008059D0" astOperand1="00805040" astOperand2="00806050"/>
+    <token id="00806050" file="main_tx.c" linenr="142" column="13" str="!" scope="008077D8" type="op" isLogicalOp="True" astParent="00806010" astOperand1="00805D90" valueType-type="bool"/>
+    <token id="00806110" file="main_tx.c" linenr="142" column="14" str="PORTBbits" scope="008077D8" type="name" astParent="00805D90"/>
+    <token id="00805D90" file="main_tx.c" linenr="142" column="23" str="." scope="008077D8" astParent="00806050" astOperand1="00806110" astOperand2="00805D50"/>
+    <token id="00805D50" file="main_tx.c" linenr="142" column="24" str="RB0" scope="008077D8" type="name" astParent="00805D90"/>
+    <token id="008059D0" file="main_tx.c" linenr="142" column="27" str=")" scope="008077D8" link="00806010"/>
+    <token id="00805BD0" file="main_tx.c" linenr="142" column="29" str="{" scope="00807908" link="00805FD0"/>
+    <token id="00805C10" file="main_tx.c" linenr="143" column="13" str="saved_state" scope="00807908" type="name" varId="2" variable="00806558" astParent="00806090" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00806090" file="main_tx.c" linenr="143" column="25" str="=" scope="00807908" type="op" isAssignmentOp="True" astOperand1="00805C10" astOperand2="00805950" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00805950" file="main_tx.c" linenr="143" column="27" str="state" scope="00807908" type="name" varId="1" variable="008064D8" astParent="00806090" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00805CD0" file="main_tx.c" linenr="143" column="32" str=";" scope="00807908"/>
+    <token id="00805ED0" file="main_tx.c" linenr="145" column="13" str="state" scope="00807908" type="name" varId="1" variable="008064D8" astParent="00805E90" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00805E90" file="main_tx.c" linenr="145" column="19" str="=" scope="00807908" type="op" isAssignmentOp="True" astOperand1="00805ED0" astOperand2="00805DD0" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00805DD0" file="main_tx.c" linenr="145" column="21" str="PAIRING" scope="00807908" type="name" values="04537E30" astParent="00805E90" valueType-type="int" valueType-sign="signed" valueType-typeScope="043BB9E0"/>
+    <token id="00805E10" file="main_tx.c" linenr="145" column="28" str=";" scope="00807908"/>
+    <token id="00805F10" file="main_tx.c" linenr="146" column="13" str="__delay_ms" scope="00807908" type="name" astParent="00805E50"/>
+    <token id="00805E50" file="main_tx.c" linenr="146" column="23" str="(" scope="00807908" link="00805990" astOperand1="00805F10" astOperand2="00805C50"/>
+    <token id="00805C50" file="main_tx.c" linenr="146" column="24" str="2000" scope="00807908" type="number" isInt="True" values="04537F80" astParent="00805E50" valueType-type="int" valueType-sign="signed"/>
+    <token id="00805990" file="main_tx.c" linenr="146" column="28" str=")" scope="00807908" link="00805E50"/>
+    <token id="00805B10" file="main_tx.c" linenr="146" column="29" str=";" scope="00807908"/>
+    <token id="00805A10" file="main_tx.c" linenr="147" column="13" str="state" scope="00807908" type="name" varId="1" variable="008064D8" astParent="00805F50" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00805F50" file="main_tx.c" linenr="147" column="19" str="=" scope="00807908" type="op" isAssignmentOp="True" astOperand1="00805A10" astOperand2="00805F90" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00805F90" file="main_tx.c" linenr="147" column="21" str="saved_state" scope="00807908" type="name" varId="2" variable="00806558" astParent="00805F50" valueType-type="char" valueType-sign="unsigned"/>
+    <token id="00805C90" file="main_tx.c" linenr="147" column="32" str=";" scope="00807908"/>
+    <token id="00805FD0" file="main_tx.c" linenr="148" column="9" str="}" scope="00807908" link="00805BD0"/>
+    <token id="008060D0" file="main_tx.c" linenr="149" column="5" str="}" scope="008077D8" link="00805000"/>
+    <token id="00805A50" file="main_tx.c" linenr="149" column="6" str=";" scope="00807870"/>
+    <token id="00805A90" file="main_tx.c" linenr="151" column="5" str="return" scope="00807870" type="name" valueType-type="void"/>
+    <token id="00805AD0" file="main_tx.c" linenr="151" column="11" str=";" scope="00807870"/>
+    <token id="00805B50" file="main_tx.c" linenr="152" column="1" str="}" scope="00807870" link="00804CC0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="043BB948" type="Global">
+      <functionList>
+        <function id="00812620" tokenDef="0087A888" name="initialize_hw" type="Function"/>
+        <function id="00812C50" tokenDef="04592560" name="handle_port_b_change" type="Function"/>
+        <function id="008130C8" tokenDef="008023F0" name="handle_timer_1_overflow" type="Function"/>
+        <function id="008134E8" tokenDef="00804F80" name="main" type="Function"/>
+      </functionList>
+      <varlist>
+        <var id="008064D8"/>
+        <var id="00806558"/>
+        <var id="00806598"/>
+        <var id="008065D8"/>
+      </varlist>
+    </scope>
+    <scope id="043BB9E0" type="Enum" className="Anonymous0" bodyStart="043BB728" bodyEnd="0087B148" nestedIn="043BB948"/>
+    <scope id="0080BE40" type="Function" className="initialize_hw" bodyStart="0087ABC8" bodyEnd="04592960" nestedIn="043BB948" function="00812620"/>
+    <scope id="0080BED8" type="Function" className="handle_port_b_change" bodyStart="04592920" bodyEnd="00802470" nestedIn="043BB948" function="00812C50"/>
+    <scope id="0080BF70" type="If" bodyStart="045925A0" bodyEnd="04592A20" nestedIn="0080BED8"/>
+    <scope id="0080C008" type="If" bodyStart="00802FB0" bodyEnd="00802E70" nestedIn="0080BED8"/>
+    <scope id="044A3C18" type="If" bodyStart="00802FF0" bodyEnd="00802AF0" nestedIn="0080BED8"/>
+    <scope id="044A3CB0" type="If" bodyStart="00803030" bodyEnd="00802830" nestedIn="0080BED8"/>
+    <scope id="044A3D48" type="Function" className="handle_timer_1_overflow" bodyStart="008028B0" bodyEnd="00803F38" nestedIn="043BB948" function="008130C8"/>
+    <scope id="044A3DE0" type="If" bodyStart="008026F0" bodyEnd="008037F8" nestedIn="044A3D48"/>
+    <scope id="044A3E78" type="Else" bodyStart="00806710" bodyEnd="00806910" nestedIn="044A3D48"/>
+    <scope id="00807EF8" type="If" bodyStart="00803278" bodyEnd="008034B8" nestedIn="044A3E78"/>
+    <scope id="00807A38" type="Else" bodyStart="008038B8" bodyEnd="00803A38" nestedIn="044A3E78"/>
+    <scope id="00807870" type="Function" className="main" bodyStart="00804CC0" bodyEnd="00805B50" nestedIn="043BB948" function="008134E8"/>
+    <scope id="008077D8" type="While" bodyStart="00805000" bodyEnd="008060D0" nestedIn="00807870"/>
+    <scope id="00807908" type="If" bodyStart="00805BD0" bodyEnd="00805FD0" nestedIn="008077D8"/>
+  </scopes>
+  <variables>
+    <var id="008064D8" nameToken="0087AEC8" typeStartToken="0087B108" typeEndToken="0087B108" access="Global" scope="043BB948" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00806558" nameToken="0087B3C8" typeStartToken="0087B208" typeEndToken="0087B208" access="Global" scope="043BB948" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="00806598" nameToken="0087B408" typeStartToken="0087B648" typeEndToken="0087B648" access="Global" scope="043BB948" constness="0" isArgument="false" isArray="true" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="008065D8" nameToken="0087A748" typeStartToken="0087AD08" typeEndToken="0087AD08" access="Global" scope="043BB948" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="007A78A0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="007A79B0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="007A78C0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="007A78B0">
+      <value intvalue="2" known="true"/>
+    </values>
+    <values id="007A78D0">
+      <value intvalue="3" known="true"/>
+    </values>
+    <values id="007A7930">
+      <value intvalue="4" known="true"/>
+    </values>
+    <values id="007A78E0">
+      <value intvalue="5" known="true"/>
+    </values>
+    <values id="007A7960">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="007A78F0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="007A7910">
+      <value intvalue="6" known="true"/>
+    </values>
+    <values id="007A7940">
+      <value intvalue="240" known="true"/>
+    </values>
+    <values id="007A7980">
+      <value intvalue="128" known="true"/>
+    </values>
+    <values id="007A7990">
+      <value intvalue="160" known="true"/>
+    </values>
+    <values id="007A79A0">
+      <value intvalue="168" known="true"/>
+    </values>
+    <values id="04537E00">
+      <value intvalue="170" known="true"/>
+    </values>
+    <values id="04537C70">
+      <value intvalue="255" known="true"/>
+    </values>
+    <values id="04537C60">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537D50">
+      <value intvalue="247" known="true"/>
+    </values>
+    <values id="04537E20">
+      <value intvalue="241" known="true"/>
+    </values>
+    <values id="04537DF0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537C30">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537C80">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="04537D30">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537CD0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537CC0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537DA0">
+      <value intvalue="51" known="true"/>
+    </values>
+    <values id="04537CE0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537D80">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537C50">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537D40">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="04537E10">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537D60">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537C40">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537DB0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537C90">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="04537D90">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="04537CA0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="04537CB0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="04537CF0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537D00">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="04537D10">
+      <value intvalue="2" known="true"/>
+    </values>
+    <values id="04537D20">
+      <value intvalue="3" known="true"/>
+    </values>
+    <values id="04537DC0">
+      <value intvalue="4" known="true"/>
+    </values>
+    <values id="04537D70">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537DD0">
+      <value intvalue="8" known="true"/>
+    </values>
+    <values id="04537DE0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="04537E90">
+      <value intvalue="128" condition-line="97" possible="true"/>
+      <value intvalue="256" condition-line="97" impossible="true"/>
+    </values>
+    <values id="04537F10">
+      <value intvalue="7" condition-line="97" possible="true"/>
+      <value intvalue="8" condition-line="97" impossible="true"/>
+    </values>
+    <values id="04537F40">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="04537EA0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537E70">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537F50">
+      <value intvalue="7" condition-line="97" impossible="true"/>
+      <value intvalue="8" condition-line="97" possible="true"/>
+    </values>
+    <values id="04537FE0">
+      <value intvalue="1" condition-line="97" possible="true"/>
+    </values>
+    <values id="04537FC0">
+      <value intvalue="16" known="true"/>
+    </values>
+    <values id="04537EB0">
+      <value intvalue="5" known="true"/>
+    </values>
+    <values id="04537F00">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537EE0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537EC0">
+      <value intvalue="5" known="true"/>
+    </values>
+    <values id="04537FB0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537E50">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="04537E60">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="04537E30">
+      <value intvalue="5" known="true"/>
+    </values>
+    <values id="04537F80">
+      <value intvalue="2000" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

@@ -26,7 +26,7 @@ F6 "OUT_1" O R 4800 2700 50
 F7 "OUT_2" O R 4800 2950 50 
 F8 "OUT_3" O R 4800 3200 50 
 F9 "OUT_4" O R 4800 3450 50 
-F10 "COMM" O L 3950 3850 50 
+F10 "COM" O L 3950 4100 50 
 $EndSheet
 $Sheet
 S 3950 4600 850  600 
@@ -83,12 +83,6 @@ Wire Wire Line
 	3650 4000 3650 3450
 Wire Wire Line
 	3650 3450 3950 3450
-Wire Wire Line
-	2750 4100 3850 4100
-Wire Wire Line
-	3850 4100 3850 3850
-Wire Wire Line
-	3850 3850 3950 3850
 Text GLabel 4950 4750 2    50   UnSpc ~ 0
 Vdd
 Text GLabel 8450 6050 2    50   UnSpc ~ 0
@@ -198,4 +192,6 @@ F 5 "Manufacturer Recommendations" H 2350 4000 50  0001 L BNN "STANDARD"
 	1    2350 4000
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	2750 4100 3950 4100
 $EndSCHEMATC

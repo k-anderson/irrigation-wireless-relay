@@ -1,0 +1,31 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# 1N4002
+#
+DEF 1N4002 D 0 40 Y N 1 L N
+F0 "D" 450 200 50 H V L BNN
+F1 "1N4002" 450 100 50 H V L BNN
+F2 "DIOAD1413W86L463D238" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "7596671P" 0 0 50 H I L BNN "RS_PART_NUMBER"
+F5 "http://uk.rs-online.com/web/p/products/7596671P" 0 0 50 H I L BNN "RS_PRICE-STOCK"
+F6 "Fairchild Semiconductor" 0 0 50 H I L BNN "MANUFACTURER_NAME"
+F7 "1N4002" 0 0 50 H I L BNN "MANUFACTURER_PART_NUMBER"
+F8 "mm" 0 0 50 H I L BNN "HEIGHT"
+F9 "http://www.mouser.com/Search/ProductDetail.aspx?qs=PKwgOmPR8%252bnV4bWPTLRQXA%3d%3d" 0 0 50 H I L BNN "MOUSER_PRICE-STOCK"
+F10 "1N4002, Rectifier & Schottky Diode,  Switching 1A max, 100V, 2-Pin, DO-41" 0 0 50 H I L BNN "DESCRIPTION"
+F11 "512-1N4002" 0 0 50 H I L BNN "MOUSER_PART_NUMBER"
+DRAW
+P 2 0 0 10 200 0 400 100 N
+P 2 0 0 10 400 -100 400 100 N
+P 2 0 0 10 400 -100 200 0 N
+P 2 0 0 10 200 100 200 -100 N
+X ~ 1 0 0 200 R 40 40 0 0 B 
+X ~ 2 600 0 200 L 40 40 0 0 B 
+ENDDRAW
+ENDDEF
+#
+# End Library

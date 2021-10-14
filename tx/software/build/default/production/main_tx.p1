@@ -682,14 +682,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 88 ]
 {
 "200
-[; ;main_tx.c: 200:         PORTBbits.RB2 = 1;
-[e = . . _PORTBbits 0 2 -> -> 1 `i `uc ]
+[; ;main_tx.c: 200:         PORTBbits.RB1 = 1;
+[e = . . _PORTBbits 0 1 -> -> 1 `i `uc ]
 "201
 [; ;main_tx.c: 201:         _delay((unsigned long)((1)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "202
-[; ;main_tx.c: 202:         PORTBbits.RB2 = 0;
-[e = . . _PORTBbits 0 2 -> -> 0 `i `uc ]
+[; ;main_tx.c: 202:         PORTBbits.RB1 = 0;
+[e = . . _PORTBbits 0 1 -> -> 0 `i `uc ]
 "203
 [; ;main_tx.c: 203:         _delay((unsigned long)((1)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
@@ -709,14 +709,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 91 ]
 {
 "208
-[; ;main_tx.c: 208:         PORTBbits.RB2 = 1;
-[e = . . _PORTBbits 0 2 -> -> 1 `i `uc ]
+[; ;main_tx.c: 208:         PORTBbits.RB1 = 1;
+[e = . . _PORTBbits 0 1 -> -> 1 `i `uc ]
 "209
 [; ;main_tx.c: 209:         _delay((unsigned long)((1)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "210
-[; ;main_tx.c: 210:         PORTBbits.RB2 = 0;
-[e = . . _PORTBbits 0 2 -> -> 0 `i `uc ]
+[; ;main_tx.c: 210:         PORTBbits.RB1 = 0;
+[e = . . _PORTBbits 0 1 -> -> 0 `i `uc ]
 "211
 [; ;main_tx.c: 211:         _delay((unsigned long)((1)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
@@ -729,8 +729,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 92 ]
 }
 "215
-[; ;main_tx.c: 215:     PORTBbits.RB2 = 0;
-[e = . . _PORTBbits 0 2 -> -> 0 `i `uc ]
+[; ;main_tx.c: 215:     PORTBbits.RB1 = 0;
+[e = . . _PORTBbits 0 1 -> -> 0 `i `uc ]
 "216
 [; ;main_tx.c: 216:     _delay((unsigned long)((10)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
@@ -756,8 +756,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 97 ]
 {
 "227
-[; ;main_tx.c: 227:         PORTBbits.RB2 = 0;
-[e = . . _PORTBbits 0 2 -> -> 0 `i `uc ]
+[; ;main_tx.c: 227:         PORTBbits.RB1 = 0;
+[e = . . _PORTBbits 0 1 -> -> 0 `i `uc ]
 "229
 [; ;main_tx.c: 229:         if (state == PAIRING) {
 [e $ ! == -> _state `i -> . `E469 5 `i 99  ]

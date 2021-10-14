@@ -19,7 +19,7 @@ Text HLabel 8050 4450 2    50   Input ~ 0
 ZONE_2
 Text HLabel 9150 4250 2    50   Input ~ 0
 ZONE_4
-Text HLabel 2950 4350 0    50   Output ~ 0
+Text HLabel 2950 4450 0    50   Output ~ 0
 Data
 Text HLabel 2950 4250 0    50   Input ~ 0
 Button
@@ -51,8 +51,6 @@ Wire Wire Line
 	2950 4150 3200 4150
 Wire Wire Line
 	2950 4250 3200 4250
-Wire Wire Line
-	2950 4350 3200 4350
 Wire Wire Line
 	2950 4550 3200 4550
 $Comp
@@ -102,7 +100,6 @@ Wire Wire Line
 	5150 2000 5150 2300
 NoConn ~ 3200 3850
 NoConn ~ 3200 3950
-NoConn ~ 3200 4450
 NoConn ~ 5450 2000
 NoConn ~ 5550 2000
 NoConn ~ 5650 2000
@@ -117,4 +114,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 4050 3200 4050
 NoConn ~ 3200 3750
+Wire Wire Line
+	3200 4450 2950 4450
+NoConn ~ 3200 4350
 $EndSCHEMATC

@@ -894,15 +894,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _packet_rx ]
 [f ]
 "310
-[; ;main_rx.c: 310:     if (PORTBbits.RB1) {
-[e $ ! != -> . . _PORTBbits 0 1 `i -> 0 `i 101  ]
+[; ;main_rx.c: 310:     if (PORTBbits.RB2) {
+[e $ ! != -> . . _PORTBbits 0 2 `i -> 0 `i 101  ]
 {
 "320
-[; ;main_rx.c: 320:         while (PORTBbits.RB1);
+[; ;main_rx.c: 320:         while (PORTBbits.RB2);
 [e $U 102  ]
 [e :U 103 ]
 [e :U 102 ]
-[e $ != -> . . _PORTBbits 0 1 `i -> 0 `i 103  ]
+[e $ != -> . . _PORTBbits 0 2 `i -> 0 `i 103  ]
 [e :U 104 ]
 "321
 [; ;main_rx.c: 321:         packet++;

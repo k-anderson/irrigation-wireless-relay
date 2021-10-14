@@ -307,7 +307,7 @@ void packet_rx() {
     // transitions" followed by 4 more transitions for the value (counter starts
     // at zero so... 0,1,2,3) then 10ms of no transitions.  If you are familiar
     // with how rotary telephones work this is very similar
-    if (PORTBbits.RB1) {
+    if (PORTBbits.RB2) {
         // if we have a high on port b 1 (wireless RX), wait for it to
         // transition to low.  Consider the transition from high to low as a
         // counter trigger and increment the packet.  Then reset timer 0
@@ -317,7 +317,7 @@ void packet_rx() {
         // overflow, handle the received value of this packet, reset the
         // packet buffer for the next transmission, and disable itself (this
         // will restart it when the next data stream is detected)
-        while (PORTBbits.RB1);
+        while (PORTBbits.RB2);
         packet++;
         TMR0 = 0;
         INTCONbits.TMR0IF = 0;
